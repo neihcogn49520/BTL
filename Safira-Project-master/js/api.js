@@ -8,7 +8,7 @@ function render(list) {
 
     list.map(val => {
         $(".definition").append(`
-            <p>${val.title}</p>
+            <p>${bai1.title}</p>
         `);
     })
 }
