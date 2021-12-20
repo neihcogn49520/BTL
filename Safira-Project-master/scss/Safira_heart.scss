@@ -1,0 +1,55 @@
+@import"flex";
+@import"media";
+@import"gridSafira";
+@import"mixin";
+@import"color";
+@import"distances";
+@import"fonts";
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.header__ware {
+    background-color: #40a944;
+}
+
+main {
+    button.filter {
+        transition: all 0.3s;
+        &:hover {
+            background-color: #40a944 !important;
+        }
+    }
+    .button-search {
+        background-color: #40a944 !important;
+        &:hover {
+            background-color: #222 !important;
+        }
+        i.fa-search {
+            color: white;
+        }
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        td,
+        th {
+            border: 1px solid rgba($color: #333, $alpha: 0.6);
+            img {
+                width: 75px !important;
+            }
+        }
+        td.remove-product {
+            cursor: default;
+        }
+        td>button {
+            border-radius: 20px;
+            font-size: 20px;
+            transition: all 0.3s;
+            &:hover {
+                background-color: #222 !important;
+            }
+        }
+    }
+}
