@@ -7,51 +7,43 @@
                 "content1": "Stack",
                 "val": "1",
                 "bai1": [{
-                    "title": "A stack is a linear data structure that follows the principle of Last In First Out (LIFO). This means the last element inserted inside the stack is removed first.",
+                    "title": "In this tutorial, you will learn about the stack data structure.",
                     "noidung": [{
-                        "ex": "+ Ví dụ <br> mặt trời quay quanh trái đất<br>1+1 =2 <br>Hôm nay trời đẹp quá !  (ko là mệnh đề) <br>Học bài đi ! (ko là mệnh đề)",
-                        "KH": "+ kí hiệu: người ta dùng các ký hiệu P, Q, R... để chỉ mệnh đề.",
-                        "muc1": "Chân trị của mệnh đề:+  một mệnh đề chỉ có thể đúng hoặc sai, không thể đồng thời  vừa đúng hoặc vừa sai. khi mệnh đề P đúng ta nói P có chân trị đúng , ngược lại ta nói P có chân trị sai.<br>+ chân trị đúng và chân trị sai sẽ được ký hiệu lần lượt là là 1(hay Đ,T) và 0( S,F).<br>+ Phân Loại: <br>a)mệnh đề phức hợp : là mệnh đề được xây dựng từ các mệnh đề khác nhờ liên kết bằng các liên từ ( và, hay , khi  và chỉ khi) hoặc trạng từ “không”<br>b)mệnh đề sơ cấp: ( nguyên thủy) : Là mệnh đề không thể xây dựng từ các mệnh đề khác thông qua liên từ hoặc trạng từ “ không”."
+                        "DN": "<br>A stack is a linear data structure that follows the principle of Last In First Out (LIFO). This means the last element inserted inside the stack is removed first.<br>You can think of the stack data structure as the pile of plates on top of another.",
+                        "DN1": "Here, you can:<br>- Put a new plate on top<br>- Remove the top plate<br>And, if you want the plate at the bottom, you must first remove all the plates on top. This is exactly how the stack data structure works.",
+                        "methods": "In programming terms, putting an item on top of the stack is called push and removing an item is called pop.<br>In the above image, although item 3 was kept last, it was removed first. This is exactly how the LIFO (Last In First Out) Principle works.",
+                        "work": "The operations work as follows:<br>1. A pointer called TOP is used to keep track of the top element in the stack.<br>2. When initializing the stack, we set its value to -1 so that we can check if the stack is empty by comparing TOP == -1.<br>3. On pushing an element, we increase the value of TOP and place the new element in the position pointed to by TOP.<br>4. On popping an element, we return the element pointed to by TOP and reduce its value.<br>5. Before pushing, we check if the stack is already full.<br>6. Before popping, we check if the stack is already empty",
+                        "operation": "There are some basic operations that allow us to perform different actions on a stack.<br>- Push: Add an element to the top of a stack<br>- Pop: Remove an element from the top of a stack<br>- IsEmpty: Check if the stack is empty<br>- IsFull: Check if the stack is full<br>- Peek: Get the value of the top element without removing it",
+                        "application": "Although stack is a simple data structure to implement, it is very powerful. The most common uses of a stack are:<br>- To reverse a word - Put all the letters in a stack and pop them out. Because of the LIFO order of stack, you will get the letters in reverse order.<br>- In compilers - Compilers use the stack to calculate the value of expressions like 2 + 4 / 5 * (7 - 9) by converting the expression to prefix or postfix form.<br>- In browsers - The back button in a browser saves all the URLs you have visited previously in a stack. Each time you visit a new page, it is added on top of the stack. When you press the back button, the current URL is removed from the stack, and the previous URL is accessed."
                     }]
                 }],
                 "content2": "Queue",
 
                 "bai2": [{
-                    "title": " -Dạng mệnh đề là một biểu thức được cấu tạo từ: - Các mệnh đề (các hằng mệnh đề 0, 1) - Các biến mệnh đề p, q, r, . . . , tức là các biến lấy giá trị là các mệnh đề nào đó - Các phép toán ¬, ∧, ∨, →, ↔ và dấu đóng mở ngoặc ().",
+                    "title": "In this tutorial, you will learn what a queue is.",
                     "noidung": [{
-                        "ex": "+ Ví dụ <br> a) E(p, q) = ¬(¬p ∨ q) ∨ 1<br>b) F(p, q, r) = (p → q) ∨ ¬(q ∨ r) ",
-                        "DN": "Định nghĩa: Bảng chân trị của dạng mệnh đề E(p, q, r) là bảng ghi tất cả các trường hợp chân trị có thể xảy ra đối với dạng mệnh đề E theo chân trị của các biến mệnh đề p, q, r. ",
-                        "ex1": "Ví dụ:  Cho p, q, r là biến mệnh đề. Lập bảng chân trị của dạng mệnh đề sau:<br> E(p, q, r) = (p ∨ q) → r.",
-                        "DN1": "Độ ưu tiên các phép toán mệnh đề trong dạng mệnh đề <br>Thứ tự ưu tiên lần như sau: <br>mức 1: ¬ <br>mức 2: ∧, ∨ <br>mức 3: →, ↔ <br>Các phép toán trên cùng mức có cùng độ ưu tiên.  ",
-                        "ex2": "Ví dụ. <br>a) ¬p ∨ q → r ∨ s có nghĩa là ((¬p) ∨ q) → (r ∨ s)<br>b) ¬p ∧ q ∨ r là nhập nhằng. Ta cần phải dùng các dấu ngoặc để chỉ rõ nghĩa. ",
-                        "DN2": "Tương đương logic<br>Định nghĩa:  Hai dạng mệnh đề E và F được gọi là tương đương logic nếu chúng có cùng bảng chân trị. Ký hiệu. E ⇔ F (hay E ≡ F).<br>Ví dụ. ¬(p ∨ q) ⇔ ¬p ∧ ¬q.",
-                        "DN3": "Các quy tắc thay thế<br>Qui tắc 1:Trong dạng mệnh đề E, nếu ta thay thế biểu thức con F bởi một dạng mệnh đề tương đương logic thì dạng mệnh đề thu được vẫn còn tương đương logic với E.<br>Qui tắc 2: Giả sử dạng mệnh đề E là hằng đúng, nếu ta thay thế một biến p bằng một dạng mệnh đề nào đó thì mệnh đề có được vẫn là hằng đúng "
+                        "DN": "A priority queue is a special type of queue in which each element is associated with a priority value. And, elements are served on the basis of their priority. That is, higher priority elements are served first.<br>However, if elements with the same priority occur, they are served according to their order in the queue.",
+                        "DN1": "In the above image, since 1 was kept in the queue before 2, it is the first to be removed from the queue as well. It follows the FIFO rule.<br>In programming terms, putting items in the queue is called enqueue, and removing items from the queue is called dequeue.",
+                        "methods": "Queue operations work as follows:<br>- two pointers FRONT and REAR<br>- FRONT track the first element of the queue<br>- REAR track the last element of the queue<br>- initially, set value of FRONT and REAR to -1",
+                        "operation": "A queue is an object (an abstract data structure - ADT) that allows the following operations:<br>- Enqueue: Add an element to the end of the queue<br>- Dequeue: Remove an element from the front of the queue<br>- IsEmpty: Check if the queue is empty<br>- IsFull: Check if the queue is full<br>- Peek: Get the value of the front of the queue without removing it"
                     }]
                 }],
                 "content3": "Priority Queue",
                 "bai3": [{
-                    "title": " Tập hợp là một khái niệm cơ bản của Toán học, dùng để chỉ một nhóm các đối tượng nào đó.",
+                    "title": "In this tutorial, you will learn what priority queue is.",
                     "noidung": [{
-                        "KH": "Ký hiệu. A, B, X, . . .<br>Nếu x là phần tử của tập hợp A, ta kí hiệu x ∈ A, ngược lại ta ký hiệu x /∈ A. ",
-                        "ex": "+ Ví dụ <br>1. N = {0, 1, 2, . . .} là tập hợp các số tự nhiên.<br> 2.Z = {0, 1, −1, 2, −2, . . .} tập hợp các số nguyên.<br>3.Q = m n | m, n ∈ Z, n 6= 0 tập hợp các số hữu tỉ. <br>4. R: Tập hợp các số thực.",
-                        "muc1": "Vị Từ",
-                        "DN": "Vị từ là một phát biểu p(x, y, ..), trong đó x, y, . . . là các biến thuộc tập hợp A, B, . . . cho trước sao cho: - Bản thân p(x, y, . . .) không phải là mệnh đề. - Nếu thay x, y, . . . thành giá trị cụ thể thì p(x, y, . . .) là mệnh đề.",
-                        "ex1": "1. r(x, y, z) = “x 2 + y 2 > z”.<br>2.q(x, y) = “x 2 + y = 1”<br>3. p(n) = “n + 1 là số nguyên tố”",
-                        "DN1": "Các Phép Toán trên vị từ",
-                        "ex2": "Cho trước các vị từ p(x), q(x) theo một biến x ∈ A. Khi ấy, ta cũng có các phép toán tương ứng như trên mệnh đề:<br>- Phủ định: ¬p(x)  <br>- Phép nối liền :p(x) ∧ q(x)<br>Phép nối rời :p(x) ∨ q(x)<br>- Phép kéo theo :p(x) → q(x)<br>- Phép kéo theo hai chiều: p(x) ↔ q(x)                       ",
-                        "TH": "TH 1. Khi thay x bởi một phần tử a tùy ý thuộc A, ta có p(a) đúng.<br> TH 2. Với một số giá trị a thuộc A, ta có p(a) đúng. <br>TH 3. Khi thay x bởi một phần tử a tùy ý thuộc A, ta có p(a) sai.",
-                        "DN2": "Cho p(x) là một vị từ theo một biến xác định trên A. Ta định nghĩa các mệnh đề lượng từ hóa của p(x) như sau:<br> Mệnh đề “Với mọi x thuộc A sao cho p(x) ”, kí hiệu bởi<br> “∀x ∈ A, p(x)”,<br>là mệnh đề đúng khi và chỉ khi p(a) luôn đúng với mọi giá trị a ∈ A.<br>- Mệnh đề “Tồn tại một x thuộc A sao cho p(x)” kí hiệu bởi :<br>“∃x ∈ A, p(x)”,<br>là mệnh đề đúng khi và chỉ khi có ít nhất một giá trị x = a0 nào đó sao cho mệnh đề p(a0) đúng. <br>Lưu ý. Từ tồn tại có thể được thay thế bởi “có” hay “có ít nhất"
-                    }],
-                    "KTLQ": [{
-                        "text1": "Các quy tắc phổ dụng:Đặc biệt hóa phổ dụng",
-                        "img": "B:\\Dowload\\TT-UD-main\\TT-UD-main\\src\\img\\Capture1",
-                        "text2": "Tổng quát hóa phổ dụng"
+                        "DN": "<br>A stack is a linear data structure that follows the principle of Last In First Out (LIFO). This means the last element inserted inside the stack is removed first.<br>You can think of the stack data structure as the pile of plates on top of another.",
+                        "DN1": "Here, you can:<br>- Put a new plate on top<br>- Remove the top plate<br>And, if you want the plate at the bottom, you must first remove all the plates on top. This is exactly how the stack data structure works.",
+                        "methods": "In programming terms, putting an item on top of the stack is called push and removing an item is called pop.<br>In the above image, although item 3 was kept last, it was removed first. This is exactly how the LIFO (Last In First Out) Principle works.",
+                        "work": "The operations work as follows:<br>1. A pointer called TOP is used to keep track of the top element in the stack.<br>2. When initializing the stack, we set its value to -1 so that we can check if the stack is empty by comparing TOP == -1.<br>3. On pushing an element, we increase the value of TOP and place the new element in the position pointed to by TOP.<br>4. On popping an element, we return the element pointed to by TOP and reduce its value.<br>5. Before pushing, we check if the stack is already full.<br>6. Before popping, we check if the stack is already empty",
+                        "operation": "There are some basic operations that allow us to perform different actions on a stack.<br>- Push: Add an element to the top of a stack<br>- Pop: Remove an element from the top of a stack<br>- IsEmpty: Check if the stack is empty<br>- IsFull: Check if the stack is full<br>- Peek: Get the value of the top element without removing it",
+                        "application": "Some of the applications of a priority queue are:<br>- Dijkstra's algorithm<br>- for implementing stack<br>- for load balancing and interrupt handling in an operating system<br>- for data compression in Huffman code"
                     }]
                 }]
             }]
         },
         {
-            "content": "Chương 2: Quan hệ",
+            "content": "Data Structures (II)",
             "id": 2,
             "category": "QH",
             "data": [{
