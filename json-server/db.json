@@ -1,233 +1,234 @@
 {
     "posts": [{
-            "content": "Data Structures (I)",
-            "id": 1,
-            "category": "DSI",
-            "data": [{
-                "content1": "Stack",
-                "val": "1",
-                "bai1": [{
-                    "title": "In this tutorial, you will learn about the stack data structure.",
-                    "noidung": [{
-                        "DN": "A stack is a linear data structure that follows the principle of Last In First Out (LIFO). This means the last element inserted inside the stack is removed first.<br>You can think of the stack data structure as the pile of plates on top of another.",
-                        "DN1": "Here, you can:<br>- Put a new plate on top<br>- Remove the top plate<br>And, if you want the plate at the bottom, you must first remove all the plates on top. This is exactly how the stack data structure works.",
-                        "methods": "In programming terms, putting an item on top of the stack is called push and removing an item is called pop.<br>In the above image, although item 3 was kept last, it was removed first. This is exactly how the LIFO (Last In First Out) Principle works.",
-                        "work": "The operations work as follows:<br>1. A pointer called TOP is used to keep track of the top element in the stack.<br>2. When initializing the stack, we set its value to -1 so that we can check if the stack is empty by comparing TOP == -1.<br>3. On pushing an element, we increase the value of TOP and place the new element in the position pointed to by TOP.<br>4. On popping an element, we return the element pointed to by TOP and reduce its value.<br>5. Before pushing, we check if the stack is already full.<br>6. Before popping, we check if the stack is already empty",
-                        "operation": "There are some basic operations that allow us to perform different actions on a stack.<br>- Push: Add an element to the top of a stack<br>- Pop: Remove an element from the top of a stack<br>- IsEmpty: Check if the stack is empty<br>- IsFull: Check if the stack is full<br>- Peek: Get the value of the top element without removing it",
-                        "complex": "For the array-based implementation of a stack, the push and pop operations take constant time, i.e. O(1).",
-                        "application": "Although stack is a simple data structure to implement, it is very powerful. The most common uses of a stack are:<br>- To reverse a word - Put all the letters in a stack and pop them out. Because of the LIFO order of stack, you will get the letters in reverse order.<br>- In compilers - Compilers use the stack to calculate the value of expressions like 2 + 4 / 5 * (7 - 9) by converting the expression to prefix or postfix form.<br>- In browsers - The back button in a browser saves all the URLs you have visited previously in a stack. Each time you visit a new page, it is added on top of the stack. When you press the back button, the current URL is removed from the stack, and the previous URL is accessed."
-                    }]
-                }],
-                "content2": "Queue",
+                "content": "Data Structures (I)",
+                "id": 1,
+                "category": "DSI",
+                "data": [{
+                    "content1": "Stack",
+                    "val": "1",
+                    "bai1": [{
+                        "title": "In this tutorial, you will learn about the stack data structure.",
+                        "noidung": [{
+                            "DN": "A stack is a linear data structure that follows the principle of Last In First Out (LIFO). This means the last element inserted inside the stack is removed first.<br>You can think of the stack data structure as the pile of plates on top of another.",
+                            "DN1": "Here, you can:<br>- Put a new plate on top<br>- Remove the top plate<br>And, if you want the plate at the bottom, you must first remove all the plates on top. This is exactly how the stack data structure works.",
+                            "methods": "In programming terms, putting an item on top of the stack is called push and removing an item is called pop.<br>In the above image, although item 3 was kept last, it was removed first. This is exactly how the LIFO (Last In First Out) Principle works.",
+                            "work": "The operations work as follows:<br>1. A pointer called TOP is used to keep track of the top element in the stack.<br>2. When initializing the stack, we set its value to -1 so that we can check if the stack is empty by comparing TOP == -1.<br>3. On pushing an element, we increase the value of TOP and place the new element in the position pointed to by TOP.<br>4. On popping an element, we return the element pointed to by TOP and reduce its value.<br>5. Before pushing, we check if the stack is already full.<br>6. Before popping, we check if the stack is already empty",
+                            "operation": "There are some basic operations that allow us to perform different actions on a stack.<br>- Push: Add an element to the top of a stack<br>- Pop: Remove an element from the top of a stack<br>- IsEmpty: Check if the stack is empty<br>- IsFull: Check if the stack is full<br>- Peek: Get the value of the top element without removing it",
+                            "complex": "For the array-based implementation of a stack, the push and pop operations take constant time, i.e. O(1).",
+                            "application": "Although stack is a simple data structure to implement, it is very powerful. The most common uses of a stack are:<br>- To reverse a word - Put all the letters in a stack and pop them out. Because of the LIFO order of stack, you will get the letters in reverse order.<br>- In compilers - Compilers use the stack to calculate the value of expressions like 2 + 4 / 5 * (7 - 9) by converting the expression to prefix or postfix form.<br>- In browsers - The back button in a browser saves all the URLs you have visited previously in a stack. Each time you visit a new page, it is added on top of the stack. When you press the back button, the current URL is removed from the stack, and the previous URL is accessed."
+                        }]
+                    }],
+                    "content2": "Queue",
 
-                "bai2": [{
-                    "title": "In this tutorial, you will learn what a queue is.",
-                    "noidung": [{
-                        "DN": "A priority queue is a special type of queue in which each element is associated with a priority value. And, elements are served on the basis of their priority. That is, higher priority elements are served first.<br>However, if elements with the same priority occur, they are served according to their order in the queue.",
-                        "DN1": "In the above image, since 1 was kept in the queue before 2, it is the first to be removed from the queue as well. It follows the FIFO rule.<br>In programming terms, putting items in the queue is called enqueue, and removing items from the queue is called dequeue.",
-                        "methods": "Queue operations work as follows:<br>- two pointers FRONT and REAR<br>- FRONT track the first element of the queue<br>- REAR track the last element of the queue<br>- initially, set value of FRONT and REAR to -1",
-                        "operation": "A queue is an object (an abstract data structure - ADT) that allows the following operations:<br>- Enqueue: Add an element to the end of the queue<br>- Dequeue: Remove an element from the front of the queue<br>- IsEmpty: Check if the queue is empty<br>- IsFull: Check if the queue is full<br>- Peek: Get the value of the front of the queue without removing it",
-                        "complex": "The complexity of enqueue and dequeue operations in a queue using an array is O(1). If you use pop(N) in python code, then the complexity might be O(n) depending on the position of the item to be popped.",
-                        "applcation": "- CPU scheduling, Disk Scheduling<br>- When data is transferred asynchronously between two processes.The queue is used for synchronization. For example: IO Buffers, pipes, file IO, etc<br>- Handling of interrupts in real-time systems.<br>- Call Center phone systems use Queues to hold people calling them in order."
-                    }]
-                }],
-                "content3": "Priority Queue",
-                "bai3": [{
-                    "title": "In this tutorial, you will learn what priority queue is.",
-                    "noidung": [{
-                        "DN": "A priority queue is a special type of queue in which each element is associated with a priority value. And, elements are served on the basis of their priority. That is, higher priority elements are served first.<br>However, if elements with the same priority occur, they are served according to their order in the queue.",
-                        "DN1": "In the above image, since 1 was kept in the queue before 2, it is the first to be removed from the queue as well. It follows the FIFO rule.<br>In programming terms, putting items in the queue is called enqueue, and removing items from the queue is called dequeue.",
-                        "methods": "Queue operations work as follows:<br>- two pointers FRONT and REAR<br>- FRONT track the first element of the queue<br>- REAR track the last element of the queue<br>- initially, set value of FRONT and REAR to -1",
-                        "operation": "Basic operations of a priority queue are inserting, removing, and peeking elements.",
-                        "oper1": "Inserting an element into a priority queue (max-heap) is done by the following steps.<br>- Insert the new element at the end of the tree.<br>- Heapify the tree.<br>- For Min Heap, the above algorithm is modified so that parentNode is always smaller than newNode.",
-                        "oper2": "Deleting an element from a priority queue (max-heap) is done as follows:<br>- Select the element to be deleted.<br>- Swap it with the last element.<br>- Remove the last element.<br>- Heapify the tree.<br>- For Min Heap, the above algorithm is modified so that the both childNodes are smaller than currentNode.",
-                        "oper3": "Peek operation returns the maximum element from Max Heap or minimum element from Min Heap without deleting the node.<br>For both Max heap and Min Heap: return rootNode",
-                        "oper4": "Extract-Max returns the node with maximum value after removing it from a Max Heap whereas Extract-Min returns the node with minimum value after removing it from Min Heap.",
-                        "application": "Some of the applications of a priority queue are:<br>- Dijkstra's algorithm<br>- for implementing stack<br>- for load balancing and interrupt handling in an operating system<br>- for data compression in Huffman code"
-                    }]
-                }]
-            }]
-        },
-        {
-            "content": "Data Structures (II)",
-            "id": 2,
-            "category": "DSII",
-            "data": [{
-                "content1": "Single Linked List",
-                "bai1": [{
-                    "title": "In this tutorial, you will learn about linked list data structure.",
-                    "noidung": [{
-                        "DN": "A linked list is a linear data structure that includes a series of connected nodes. Here, each node stores the data and the address of the next node.",
-                        "DN1": "You have to start somewhere, so we give the address of the first node a special name called HEAD. Also, the last node in the linked list can be identified because its next portion points to NULL.<br>Linked lists can be of multiple types: singly, doubly, and circular linked list. In this article, we will focus on the singly linked list.",
-                        "work1": "Let's see how each node of the linked list is represented. Each node consists:<br>- A data item<br>An address of another node<br>Understanding the structure of a linked list node is the key to having a grasp on it.<br>Each struct node has a data item and a pointer to another struct node. Let us create a simple Linked List with three items to understand how this works.",
-                        "work2": "The power of a linked list comes from the ability to break the chain and rejoin it. E.g. if you wanted to put an element 4 between 1 and 2, the steps would be:<br>- Create a new struct node and allocate memory to it.<br>- Add its data value as 4<br>Point its next pointer to the struct node containing 2 as the data value<br>- Change the next pointer of '1' to the node we just created.<br>Doing something similar in an array would have required shifting the positions of all the subsequent elements.",
-                        "application": "- Dynamic memory allocation<br>- Implemented in stack and queue<br>- In undo functionality of softwares<br>- Hash tables, Graphs"
-                    }]
-                }],
-                "content2": "Double Linked List",
-                "bai2": [{
-                    "title": "In this tutorial, you will learn about the doubly linke list.",
-                    "noidung": [{
-                        "DN": "A doubly linked list is a type of linked list in which each node consists of 3 components:<br>- *prev - address of the previous node<br>- data - data item<br>- *next - address of next node",
-                        "oper1": "Insertion on a Doubly Linked List",
-                        "ND1": "Pushing a node to a doubly-linked list is similar to pushing a node to a linked list, but extra work is required to handle the pointer to the previous node.<br>We can insert elements at 3 different positions of a doubly-linked list:<br>- Insertion at the beginning<br>- Insertion in-between nodes<br>- Insertion at the End<br>Suppose we have a double-linked list with elements 1, 2, and 3.",
-                        "oper2": "Deletion from a Doubly Linked List",
-                        "ND2": "Similar to insertion, we can also delete a node from 3 different positions of a doubly linked list.<br>- Delete the First Node of Doubly Linked List<br>- Deletion of the Inner Node<br>- Delete the Last Node of Doubly Linked List",
-                        "application": "1. Redo and undo functionality in software.<br>2. Forward and backward navigation in browsers.<br>3. For navigation systems where forward and backward navigation is required."
+                    "bai2": [{
+                        "title": "In this tutorial, you will learn what a queue is.",
+                        "noidung": [{
+                            "DN": "A priority queue is a special type of queue in which each element is associated with a priority value. And, elements are served on the basis of their priority. That is, higher priority elements are served first.<br>However, if elements with the same priority occur, they are served according to their order in the queue.",
+                            "DN1": "In the above image, since 1 was kept in the queue before 2, it is the first to be removed from the queue as well. It follows the FIFO rule.<br>In programming terms, putting items in the queue is called enqueue, and removing items from the queue is called dequeue.",
+                            "methods": "Queue operations work as follows:<br>- two pointers FRONT and REAR<br>- FRONT track the first element of the queue<br>- REAR track the last element of the queue<br>- initially, set value of FRONT and REAR to -1",
+                            "operation": "A queue is an object (an abstract data structure - ADT) that allows the following operations:<br>- Enqueue: Add an element to the end of the queue<br>- Dequeue: Remove an element from the front of the queue<br>- IsEmpty: Check if the queue is empty<br>- IsFull: Check if the queue is full<br>- Peek: Get the value of the front of the queue without removing it",
+                            "complex": "The complexity of enqueue and dequeue operations in a queue using an array is O(1). If you use pop(N) in python code, then the complexity might be O(n) depending on the position of the item to be popped.",
+                            "applcation": "- CPU scheduling, Disk Scheduling<br>- When data is transferred asynchronously between two processes.The queue is used for synchronization. For example: IO Buffers, pipes, file IO, etc<br>- Handling of interrupts in real-time systems.<br>- Call Center phone systems use Queues to hold people calling them in order."
+                        }]
+                    }],
+                    "content3": "Priority Queue",
+                    "bai3": [{
+                        "title": "In this tutorial, you will learn what priority queue is.",
+                        "noidung": [{
+                            "DN": "A priority queue is a special type of queue in which each element is associated with a priority value. And, elements are served on the basis of their priority. That is, higher priority elements are served first.<br>However, if elements with the same priority occur, they are served according to their order in the queue.",
+                            "DN1": "In the above image, since 1 was kept in the queue before 2, it is the first to be removed from the queue as well. It follows the FIFO rule.<br>In programming terms, putting items in the queue is called enqueue, and removing items from the queue is called dequeue.",
+                            "methods": "Queue operations work as follows:<br>- two pointers FRONT and REAR<br>- FRONT track the first element of the queue<br>- REAR track the last element of the queue<br>- initially, set value of FRONT and REAR to -1",
+                            "operation": "Basic operations of a priority queue are inserting, removing, and peeking elements.",
+                            "oper1": "Inserting an element into a priority queue (max-heap) is done by the following steps.<br>- Insert the new element at the end of the tree.<br>- Heapify the tree.<br>- For Min Heap, the above algorithm is modified so that parentNode is always smaller than newNode.",
+                            "oper2": "Deleting an element from a priority queue (max-heap) is done as follows:<br>- Select the element to be deleted.<br>- Swap it with the last element.<br>- Remove the last element.<br>- Heapify the tree.<br>- For Min Heap, the above algorithm is modified so that the both childNodes are smaller than currentNode.",
+                            "oper3": "Peek operation returns the maximum element from Max Heap or minimum element from Min Heap without deleting the node.<br>For both Max heap and Min Heap: return rootNode",
+                            "oper4": "Extract-Max returns the node with maximum value after removing it from a Max Heap whereas Extract-Min returns the node with minimum value after removing it from Min Heap.",
+                            "complex": "",
+                            "application": "Some of the applications of a priority queue are:<br>- Dijkstra's algorithm<br>- for implementing stack<br>- for load balancing and interrupt handling in an operating system<br>- for data compression in Huffman code"
+                        }]
                     }]
                 }]
-            }]
-        },
-        {
-            "content": "Tree based DSA (II)",
-            "id": 3,
-            "category": "TreeI",
-            "data": [{
-                "content1": "Tree Data Structure",
-                "bai1": [{
-                    "title": "In this tutorial, you will learn about tree data structure.",
-                    "noidung": [{
-                        "DN": "A tree is a nonlinear hierarchical data structure that consists of nodes connected by edges.",
-                        "oper1": "Why Tree Data Structure?",
-                        "ND1": "Other data structures such as arrays, linked list, stack, and queue are linear data structures that store data sequentially. In order to perform any operation in a linear data structure, the time complexity increases with the increase in the data size. But, it is not acceptable in today's computational world.<br>Different tree data structures allow quicker and easier access to the data as it is a non-linear data structure.",
-                        "oper2": "Tree Terminologies",
-                        "ND21": "A node is an entity that contains a key or value and pointers to its child nodes.<br>The last nodes of each path are called leaf nodes or external nodes that do not contain a link/pointer to child nodes.<br>The node having at least a child node is called an internal node.",
-                        "ND22": "It is the link between any two nodes.",
-                        "ND23": "It is the topmost node of a tree.",
-                        "ND24": "The height of a node is the number of edges from the node to the deepest leaf (ie. the longest path from the node to a leaf node).",
-                        "ND25": "The depth of a node is the number of edges from the root to the node.",
-                        "ND26": "The height of a Tree is the height of the root node or the depth of the deepest node.",
-                        "ND27": "The degree of a node is the total number of branches of that node.",
-                        "ND28": "A collection of disjoint trees is called a forest.<br>You can create a forest by cutting the root of a tree.",
-                        "oper3": "Types of Tree",
-                        "ND3": "- Binary Tree<br>- Binary Search Tree<br>- B-Tree",
-                        "application": "1. Binary Search Trees(BSTs) are used to quickly check whether an element is present in a set or not.<br>2. Heap is a kind of tree that is used for heap sort.<br>3. A modified version of a tree called Tries is used in modern routers to store routing information.<br>4. Most popular databases use B-Trees and T-Trees, which are variants of the tree structure we learned above to store their data<br>5. Compilers use a syntax tree to validate the syntax of every program you write."
-                    }]
-                }],
-                "content2": "Binary Tree",
-                "bai2": [{
-                    "title": "In this tutorial, you will learn about binary tree and its different types.",
-                    "noidung": [{
-                        "DN": "A binary tree is a tree data structure in which each parent node can have at most two children. Each node of a binary tree consists of three items:<br>- data item<br>- address of left child<br>- address of right child",
-                        "work": "A node of a binary tree is represented by a structure containing a data part and two pointers to other structures of the same type.",
-                        "oper1": "Full Binary Tree",
-                        "ND1": "A full Binary tree is a special type of binary tree in which every parent node/internal node has either two or no children.",
-                        "oper2": "Perfect Binary Tree",
-                        "ND2": "A perfect binary tree is a type of binary tree in which every internal node has exactly two child nodes and all the leaf nodes are at the same level.",
-                        "oper3": "Complete Binary Tree",
-                        "ND3": "A complete binary tree is just like a full binary tree, but with two major differences<br>1. Every level must be completely filled<br>2. All the leaf elements must lean towards the left.<br>3. The last leaf element might not have a right sibling i.e. a complete binary tree doesn't have to be a full binary tree.",
-                        "oper4": "Degenerate or Pathological Tree",
-                        "ND4": "A degenerate or pathological tree is the tree having a single child either left or right.",
-                        "oper5": " Skewed Binary Tree",
-                        "ND5": "A skewed binary tree is a pathological/degenerate tree in which the tree is either dominated by the left nodes or the right nodes. Thus, there are two types of skewed binary tree: left-skewed binary tree and right-skewed binary tree.",
-                        "oper6": "Balanced Binary Tree",
-                        "ND6": "It is a type of binary tree in which the difference between the height of the left and the right subtree for each node is either 0 or 1.",
-                        "application": "1. For easy and quick access to data<br>2. In router algorithms<br>3. To implement heap data structure<br>4. Syntax tree"
-                    }]
-                }],
-                "content3": "Binary Search Tree",
-                "bai3": [{
-                    "title": "In this tutorial, you will learn how Binary Search Tree works.",
-                    "noidung": [{
-                        "DN1": "Binary search tree is a data structure that quickly allows us to maintain a sorted list of numbers.<br>- It is called a binary tree because each tree node has a maximum of two children.<br>- It is called a search tree because it can be used to search for the presence of a number in O(log(n)) time.<br>The properties that separate a binary search tree from a regular binary tree is<br>1. All nodes of left subtree are less than the root node<br>2. All nodes of right subtree are more than the root nodebr>3. Both subtrees of each node are also BSTs i.e. they have the above two properties",
-                        "DN2": "The binary tree on the right isn't a binary search tree because the right subtree of the node 3 contains a value smaller than it.",
-                        "oper1": "Search Operation",
-                        "ND11": "The algorithm depends on the property of BST that if each left subtree has values below root and each right subtree has values above the root.<br>If the value is below the root, we can say for sure that the value is not in the right subtree; we need to only search in the left subtree and if the value is above the root, we can say for sure that the value is not in the left subtree; we need to only search in the right subtree.",
-                        "ND12": "Let us try to visualize this with a diagram.",
-                        "ND13": "If the value is found, we return the value so that it gets propagated in each recursion step as shown in the image below.<br>If you might have noticed, we have called return search(struct node*) four times. When we return either the new node or NULL, the value gets returned again and again until search(root) returns the final result.",
-                        "ND14": "If the value is not found, we eventually reach the left or right child of a leaf node which is NULL and it gets propagated and returned.",
-                        "oper2": "Insert Operation",
-                        "ND21": "Inserting a value in the correct position is similar to searching because we try to maintain the rule that the left subtree is lesser than root and the right subtree is larger than root.<br>We keep going to either right subtree or left subtree depending on the value and when we reach a point left or right subtree is null, we put the new node there.",
-                        "ND22": "The algorithm isn't as simple as it looks. Let's try to visualize how we add a number to an existing BST.",
-                        "ND23": "We have attached the node but we still have to exit from the function without doing any damage to the rest of the tree. This is where the return node; at the end comes in handy. In the case of NULL, the newly created node is returned and attached to the parent node, otherwise the same node is returned without any change as we go up until we return to the root.<br>This makes sure that as we move back up the tree, the other node connections aren't changed.",
-                        "oper3": "Deletion Operation",
-                        "ND31": "There are three cases for deleting a node from a binary search tree.",
-                        "ocase1": "In the first case, the node to be deleted is the leaf node. In such a case, simply delete the node from the tree.",
-                        "ocase2": "In the second case, the node to be deleted lies has a single child node. In such a case follow the steps below:<br>1. Replace that node with its child node.<br>2. Remove the child node from its original position.",
-                        "ocase3": "In the third case, the node to be deleted has two children. In such a case follow the steps below:<br>1. Get the inorder successor of that node.<br>2. Replace the node with the inorder successor.<br>3. Remove the inorder successor from its original position.",
-                        "complex": "The space complexity for all the operations is O(n).",
-                        "application": "1. In multilevel indexing in the database<br>2. For dynamic sorting<br>3. For managing virtual memory areas in Unix kernel"
-                    }]
-                }],
-                "content4": "B Tree",
-                "bai4": [{
-                    "title": "In this tutorial, you will learn about tree data structure.",
-                    "noidung": [{
-                        "DN": "B-tree is a special type of self-balancing search tree in which each node can contain more than one key and can have more than two children. It is a generalized form of the binary search tree.<br>It is also known as a height-balanced m-way tree.",
-                        "properties": "B-tree Properties",
-                        "ND1": "1. For each node x, the keys are stored in increasing order.<br>2. In each node, there is a boolean value x.leaf which is true if x is a leaf.<br>3. If n is the order of the tree, each internal node can contain at most n - 1 keys along with a pointer to each child.<br>4. Each node except root can have at most n children and at least n/2 children.<br>5. All leaves have the same depth (i.e. height-h of the tree).<br>6. The root has at least 2 children and contains a minimum of 1 key.<br>7. If n ≥ 1, then for any n-key B-tree of height h and minimum degree t ≥ 2, h ≥ logt (n+1)/2.",
-                        "oper1": "Searching an element in a B-tree",
-                        "ND11": "Searching for an element in a B-tree is the generalized form of searching an element in a Binary Search Tree. The following steps are followed.",
-                        "ND12": "1. Starting from the root node, compare k with the first key of the node. If k = the first key of the node, return the node and the index.",
-                        "ND13": "2. If k.leaf = true, return NULL (i.e. not found).",
-                        "ND14": "3. If k < the first key of the root node, search the left child of this key recursively.",
-                        "ND15": "4. If there is more than one key in the current node and k > the first key, compare k with the next key in the node.<br>If k < next key, search the left child of this key (ie. k lies in between the first and the second keys).<br>Else, search the right child of the key.",
-                        "ND16": "5. Repeat steps 1 to 4 until the leaf is reached.",
-                        "oper2": "Searching Example",
-                        "ND21": "1. Let us search key k = 17 in the tree below of degree 3.",
-                        "ND22": "2. k is not found in the root so, compare it with the root key.",
-                        "ND23": "3. Since k > 11, go to the right child of the root node.",
-                        "ND24": "4. Compare k with 16. Since k > 16, compare k with the next key 18.",
-                        "ND25": "5. Since k < 18, k lies between 16 and 18. Search in the right child of 16 or the left child of 18.",
-                        "ND26": "6. k is found.",
-                        "complex": "- Worst case Time complexity: Θ(log n)<br>- Average case Time complexity: Θ(log n)<br>- Best case Time complexity: Θ(log n)<br>- Average case Space complexity: Θ(n)<br>- Worst case Space complexity: Θ(n)",
-                        "application": "1. databases and file systems<br>2. to store blocks of data (secondary storage media)<br>3. multilevel indexing"
+            },
+            {
+                "content": "Data Structures (II)",
+                "id": 2,
+                "category": "DSII",
+                "data": [{
+                    "content1": "Single Linked List",
+                    "bai1": [{
+                        "title": "In this tutorial, you will learn about linked list data structure.",
+                        "noidung": [{
+                            "DN": "A linked list is a linear data structure that includes a series of connected nodes. Here, each node stores the data and the address of the next node.",
+                            "DN1": "You have to start somewhere, so we give the address of the first node a special name called HEAD. Also, the last node in the linked list can be identified because its next portion points to NULL.<br>Linked lists can be of multiple types: singly, doubly, and circular linked list. In this article, we will focus on the singly linked list.",
+                            "work1": "Let's see how each node of the linked list is represented. Each node consists:<br>- A data item<br>An address of another node<br>Understanding the structure of a linked list node is the key to having a grasp on it.<br>Each struct node has a data item and a pointer to another struct node. Let us create a simple Linked List with three items to understand how this works.",
+                            "work2": "The power of a linked list comes from the ability to break the chain and rejoin it. E.g. if you wanted to put an element 4 between 1 and 2, the steps would be:<br>- Create a new struct node and allocate memory to it.<br>- Add its data value as 4<br>Point its next pointer to the struct node containing 2 as the data value<br>- Change the next pointer of '1' to the node we just created.<br>Doing something similar in an array would have required shifting the positions of all the subsequent elements.",
+                            "application": "- Dynamic memory allocation<br>- Implemented in stack and queue<br>- In undo functionality of softwares<br>- Hash tables, Graphs"
+                        }]
+                    }],
+                    "content2": "Double Linked List",
+                    "bai2": [{
+                        "title": "In this tutorial, you will learn about the doubly linke list.",
+                        "noidung": [{
+                            "DN": "A doubly linked list is a type of linked list in which each node consists of 3 components:<br>- *prev - address of the previous node<br>- data - data item<br>- *next - address of next node",
+                            "oper1": "Insertion on a Doubly Linked List",
+                            "ND1": "Pushing a node to a doubly-linked list is similar to pushing a node to a linked list, but extra work is required to handle the pointer to the previous node.<br>We can insert elements at 3 different positions of a doubly-linked list:<br>- Insertion at the beginning<br>- Insertion in-between nodes<br>- Insertion at the End<br>Suppose we have a double-linked list with elements 1, 2, and 3.",
+                            "oper2": "Deletion from a Doubly Linked List",
+                            "ND2": "Similar to insertion, we can also delete a node from 3 different positions of a doubly linked list.<br>- Delete the First Node of Doubly Linked List<br>- Deletion of the Inner Node<br>- Delete the Last Node of Doubly Linked List",
+                            "application": "1. Redo and undo functionality in software.<br>2. Forward and backward navigation in browsers.<br>3. For navigation systems where forward and backward navigation is required."
+                        }]
                     }]
                 }]
-            }]
-        },
-        {
-            "content": "Tree based DSA (II)",
-            "id": 3,
-            "category": "TreeII",
-            "data": [{
-                "content1": "B Tree",
-                "bai1": [{
-                    "title": "In this tutorial, you will learn about tree data structure.",
-                    "noidung": [{
-                        "DN": "B-tree is a special type of self-balancing search tree in which each node can contain more than one key and can have more than two children. It is a generalized form of the binary search tree.<br>It is also known as a height-balanced m-way tree.",
-                        "properties": "B-tree Properties",
-                        "ND1": "1. For each node x, the keys are stored in increasing order.<br>2. In each node, there is a boolean value x.leaf which is true if x is a leaf.<br>3. If n is the order of the tree, each internal node can contain at most n - 1 keys along with a pointer to each child.<br>4. Each node except root can have at most n children and at least n/2 children.<br>5. All leaves have the same depth (i.e. height-h of the tree).<br>6. The root has at least 2 children and contains a minimum of 1 key.<br>7. If n ≥ 1, then for any n-key B-tree of height h and minimum degree t ≥ 2, h ≥ logt (n+1)/2.",
-                        "oper1": "Searching an element in a B-tree",
-                        "ND11": "Searching for an element in a B-tree is the generalized form of searching an element in a Binary Search Tree. The following steps are followed.",
-                        "ND12": "1. Starting from the root node, compare k with the first key of the node. If k = the first key of the node, return the node and the index.",
-                        "ND13": "2. If k.leaf = true, return NULL (i.e. not found).",
-                        "ND14": "3. If k < the first key of the root node, search the left child of this key recursively.",
-                        "ND15": "4. If there is more than one key in the current node and k > the first key, compare k with the next key in the node.<br>If k < next key, search the left child of this key (ie. k lies in between the first and the second keys).<br>Else, search the right child of the key.",
-                        "ND16": "5. Repeat steps 1 to 4 until the leaf is reached.",
-                        "oper2": "Searching Example",
-                        "ND21": "1. Let us search key k = 17 in the tree below of degree 3.",
-                        "ND22": "2. k is not found in the root so, compare it with the root key.",
-                        "ND23": "3. Since k > 11, go to the right child of the root node.",
-                        "ND24": "4. Compare k with 16. Since k > 16, compare k with the next key 18.",
-                        "ND25": "5. Since k < 18, k lies between 16 and 18. Search in the right child of 16 or the left child of 18.",
-                        "ND26": "6. k is found.",
-                        "complex": "- Worst case Time complexity: Θ(log n)<br>- Average case Time complexity: Θ(log n)<br>- Best case Time complexity: Θ(log n)<br>- Average case Space complexity: Θ(n)<br>- Worst case Space complexity: Θ(n)",
-                        "application": "1. databases and file systems<br>2. to store blocks of data (secondary storage media)<br>3. multilevel indexing"
-                    }]
-                }],
-                "content2": "Red-Black Tree",
-                "bai2": [{
-                    "title": "In this tutorial, you will learn about binary tree and its different types.",
-                    "noidung": [{
-                        "DN": "A binary tree is a tree data structure in which each parent node can have at most two children. Each node of a binary tree consists of three items:<br>- data item<br>- address of left child<br>- address of right child",
-                        "work": "A node of a binary tree is represented by a structure containing a data part and two pointers to other structures of the same type.",
-                        "oper1": "Full Binary Tree",
-                        "ND1": "A full Binary tree is a special type of binary tree in which every parent node/internal node has either two or no children.",
-                        "oper2": "Perfect Binary Tree",
-                        "ND2": "A perfect binary tree is a type of binary tree in which every internal node has exactly two child nodes and all the leaf nodes are at the same level.",
-                        "oper3": "Complete Binary Tree",
-                        "ND3": "A complete binary tree is just like a full binary tree, but with two major differences<br>1. Every level must be completely filled<br>2. All the leaf elements must lean towards the left.<br>3. The last leaf element might not have a right sibling i.e. a complete binary tree doesn't have to be a full binary tree.",
-                        "oper4": "Degenerate or Pathological Tree",
-                        "ND4": "A degenerate or pathological tree is the tree having a single child either left or right.",
-                        "oper5": " Skewed Binary Tree",
-                        "ND5": "A skewed binary tree is a pathological/degenerate tree in which the tree is either dominated by the left nodes or the right nodes. Thus, there are two types of skewed binary tree: left-skewed binary tree and right-skewed binary tree.",
-                        "oper6": "Balanced Binary Tree",
-                        "ND6": "It is a type of binary tree in which the difference between the height of the left and the right subtree for each node is either 0 or 1.",
-                        "application": "1. For easy and quick access to data<br>2. In router algorithms<br>3. To implement heap data structure<br>4. Syntax tree"
-                    }]
-                }]
-            }]
-        }
-    ]
-}
+            },
+            {
+                "content": "Tree based DSA (II)",
+                "id": 3,
+                "category": "TreeI",
+                "data": [{
+                        "content1": "Tree Data Structure",
+                        "bai1": [{
+                            "title": "In this tutorial, you will learn about tree data structure.",
+                            "noidung": [{
+                                "DN": "A tree is a nonlinear hierarchical data structure that consists of nodes connected by edges.",
+                                "oper1": "Why Tree Data Structure?",
+                                "ND1": "Other data structures such as arrays, linked list, stack, and queue are linear data structures that store data sequentially. In order to perform any operation in a linear data structure, the time complexity increases with the increase in the data size. But, it is not acceptable in today's computational world.<br>Different tree data structures allow quicker and easier access to the data as it is a non-linear data structure.",
+                                "oper2": "Tree Terminologies",
+                                "ND21": "A node is an entity that contains a key or value and pointers to its child nodes.<br>The last nodes of each path are called leaf nodes or external nodes that do not contain a link/pointer to child nodes.<br>The node having at least a child node is called an internal node.",
+                                "ND22": "It is the link between any two nodes.",
+                                "ND23": "It is the topmost node of a tree.",
+                                "ND24": "The height of a node is the number of edges from the node to the deepest leaf (ie. the longest path from the node to a leaf node).",
+                                "ND25": "The depth of a node is the number of edges from the root to the node.",
+                                "ND26": "The height of a Tree is the height of the root node or the depth of the deepest node.",
+                                "ND27": "The degree of a node is the total number of branches of that node.",
+                                "ND28": "A collection of disjoint trees is called a forest.<br>You can create a forest by cutting the root of a tree.",
+                                "oper3": "Types of Tree",
+                                "ND3": "- Binary Tree<br>- Binary Search Tree<br>- B-Tree",
+                                "application": "1. Binary Search Trees(BSTs) are used to quickly check whether an element is present in a set or not.<br>2. Heap is a kind of tree that is used for heap sort.<br>3. A modified version of a tree called Tries is used in modern routers to store routing information.<br>4. Most popular databases use B-Trees and T-Trees, which are variants of the tree structure we learned above to store their data<br>5. Compilers use a syntax tree to validate the syntax of every program you write."
+                            }]
+                        }],
+                        "content2": "Binary Tree",
+                        "bai2": [{
+                            "title": "In this tutorial, you will learn about binary tree and its different types.",
+                            "noidung": [{
+                                "DN": "A binary tree is a tree data structure in which each parent node can have at most two children. Each node of a binary tree consists of three items:<br>- data item<br>- address of left child<br>- address of right child",
+                                "work": "A node of a binary tree is represented by a structure containing a data part and two pointers to other structures of the same type.",
+                                "oper1": "Full Binary Tree",
+                                "ND1": "A full Binary tree is a special type of binary tree in which every parent node/internal node has either two or no children.",
+                                "oper2": "Perfect Binary Tree",
+                                "ND2": "A perfect binary tree is a type of binary tree in which every internal node has exactly two child nodes and all the leaf nodes are at the same level.",
+                                "oper3": "Complete Binary Tree",
+                                "ND3": "A complete binary tree is just like a full binary tree, but with two major differences<br>1. Every level must be completely filled<br>2. All the leaf elements must lean towards the left.<br>3. The last leaf element might not have a right sibling i.e. a complete binary tree doesn't have to be a full binary tree.",
+                                "oper4": "Degenerate or Pathological Tree",
+                                "ND4": "A degenerate or pathological tree is the tree having a single child either left or right.",
+                                "oper5": " Skewed Binary Tree",
+                                "ND5": "A skewed binary tree is a pathological/degenerate tree in which the tree is either dominated by the left nodes or the right nodes. Thus, there are two types of skewed binary tree: left-skewed binary tree and right-skewed binary tree.",
+                                "oper6": "Balanced Binary Tree",
+                                "ND6": "It is a type of binary tree in which the difference between the height of the left and the right subtree for each node is either 0 or 1.",
+                                "application": "1. For easy and quick access to data<br>2. In router algorithms<br>3. To implement heap data structure<br>4. Syntax tree"
+                            }]
+                        }],
+                        "content3": "Binary Search Tree",
+                        "bai3": [{
+                            "title": "In this tutorial, you will learn how Binary Search Tree works.",
+                            "noidung": [{
+                                "DN1": "Binary search tree is a data structure that quickly allows us to maintain a sorted list of numbers.<br>- It is called a binary tree because each tree node has a maximum of two children.<br>- It is called a search tree because it can be used to search for the presence of a number in O(log(n)) time.<br>The properties that separate a binary search tree from a regular binary tree is<br>1. All nodes of left subtree are less than the root node<br>2. All nodes of right subtree are more than the root nodebr>3. Both subtrees of each node are also BSTs i.e. they have the above two properties",
+                                "DN2": "The binary tree on the right isn't a binary search tree because the right subtree of the node 3 contains a value smaller than it.",
+                                "oper1": "Search Operation",
+                                "ND11": "The algorithm depends on the property of BST that if each left subtree has values below root and each right subtree has values above the root.<br>If the value is below the root, we can say for sure that the value is not in the right subtree; we need to only search in the left subtree and if the value is above the root, we can say for sure that the value is not in the left subtree; we need to only search in the right subtree.",
+                                "ND12": "Let us try to visualize this with a diagram.",
+                                "ND13": "If the value is found, we return the value so that it gets propagated in each recursion step as shown in the image below.<br>If you might have noticed, we have called return search(struct node*) four times. When we return either the new node or NULL, the value gets returned again and again until search(root) returns the final result.",
+                                "ND14": "If the value is not found, we eventually reach the left or right child of a leaf node which is NULL and it gets propagated and returned.",
+                                "oper2": "Insert Operation",
+                                "ND21": "Inserting a value in the correct position is similar to searching because we try to maintain the rule that the left subtree is lesser than root and the right subtree is larger than root.<br>We keep going to either right subtree or left subtree depending on the value and when we reach a point left or right subtree is null, we put the new node there.",
+                                "ND22": "The algorithm isn't as simple as it looks. Let's try to visualize how we add a number to an existing BST.",
+                                "ND23": "We have attached the node but we still have to exit from the function without doing any damage to the rest of the tree. This is where the return node; at the end comes in handy. In the case of NULL, the newly created node is returned and attached to the parent node, otherwise the same node is returned without any change as we go up until we return to the root.<br>This makes sure that as we move back up the tree, the other node connections aren't changed.",
+                                "oper3": "Deletion Operation",
+                                "ND31": "There are three cases for deleting a node from a binary search tree.",
+                                "ocase1": "In the first case, the node to be deleted is the leaf node. In such a case, simply delete the node from the tree.",
+                                "ocase2": "In the second case, the node to be deleted lies has a single child node. In such a case follow the steps below:<br>1. Replace that node with its child node.<br>2. Remove the child node from its original position.",
+                                "ocase3": "In the third case, the node to be deleted has two children. In such a case follow the steps below:<br>1. Get the inorder successor of that node.<br>2. Replace the node with the inorder successor.<br>3. Remove the inorder successor from its original position.",
+                                "complex": "The space complexity for all the operations is O(n).",
+                                "application": "1. In multilevel indexing in the database<br>2. For dynamic sorting<br>3. For managing virtual memory areas in Unix kernel"
+                            }]
+                        }],
+                        "content4": "B Tree",
+                        "bai4": [{
+                            "title": "In this tutorial, you will learn about tree data structure.",
+                            "noidung": [{
+                                "DN": "B-tree is a special type of self-balancing search tree in which each node can contain more than one key and can have more than two children. It is a generalized form of the binary search tree.<br>It is also known as a height-balanced m-way tree.",
+                                "properties": "B-tree Properties",
+                                "ND1": "1. For each node x, the keys are stored in increasing order.<br>2. In each node, there is a boolean value x.leaf which is true if x is a leaf.<br>3. If n is the order of the tree, each internal node can contain at most n - 1 keys along with a pointer to each child.<br>4. Each node except root can have at most n children and at least n/2 children.<br>5. All leaves have the same depth (i.e. height-h of the tree).<br>6. The root has at least 2 children and contains a minimum of 1 key.<br>7. If n ≥ 1, then for any n-key B-tree of height h and minimum degree t ≥ 2, h ≥ logt (n+1)/2.",
+                                "oper1": "Searching an element in a B-tree",
+                                "ND11": "Searching for an element in a B-tree is the generalized form of searching an element in a Binary Search Tree. The following steps are followed.",
+                                "ND12": "1. Starting from the root node, compare k with the first key of the node. If k = the first key of the node, return the node and the index.",
+                                "ND13": "2. If k.leaf = true, return NULL (i.e. not found).",
+                                "ND14": "3. If k < the first key of the root node, search the left child of this key recursively.",
+                                "ND15": "4. If there is more than one key in the current node and k > the first key, compare k with the next key in the node.<br>If k < next key, search the left child of this key (ie. k lies in between the first and the second keys).<br>Else, search the right child of the key.",
+                                "ND16": "5. Repeat steps 1 to 4 until the leaf is reached.",
+                                "oper2": "Searching Example",
+                                "ND21": "1. Let us search key k = 17 in the tree below of degree 3.",
+                                "ND22": "2. k is not found in the root so, compare it with the root key.",
+                                "ND23": "3. Since k > 11, go to the right child of the root node.",
+                                "ND24": "4. Compare k with 16. Since k > 16, compare k with the next key 18.",
+                                "ND25": "5. Since k < 18, k lies between 16 and 18. Search in the right child of 16 or the left child of 18.",
+                                "ND26": "6. k is found.",
+                                "complex": "- Worst case Time complexity: Θ(log n)<br>- Average case Time complexity: Θ(log n)<br>- Best case Time complexity: Θ(log n)<br>- Average case Space complexity: Θ(n)<br>- Worst case Space complexity: Θ(n)",
+                                "application": "1. databases and file systems<br>2. to store blocks of data (secondary storage media)<br>3. multilevel indexing"
+                            }]
+                        }]
+                    },
+                    {
+                        "content": "Tree based DSA (II)",
+                        "id": 3,
+                        "category": "TreeII",
+                        "data": [{
+                            "content1": "B Tree",
+                            "bai1": [{
+                                "title": "In this tutorial, you will learn about tree data structure.",
+                                "noidung": [{
+                                    "DN": "B-tree is a special type of self-balancing search tree in which each node can contain more than one key and can have more than two children. It is a generalized form of the binary search tree.<br>It is also known as a height-balanced m-way tree.",
+                                    "properties": "B-tree Properties",
+                                    "ND1": "1. For each node x, the keys are stored in increasing order.<br>2. In each node, there is a boolean value x.leaf which is true if x is a leaf.<br>3. If n is the order of the tree, each internal node can contain at most n - 1 keys along with a pointer to each child.<br>4. Each node except root can have at most n children and at least n/2 children.<br>5. All leaves have the same depth (i.e. height-h of the tree).<br>6. The root has at least 2 children and contains a minimum of 1 key.<br>7. If n ≥ 1, then for any n-key B-tree of height h and minimum degree t ≥ 2, h ≥ logt (n+1)/2.",
+                                    "oper1": "Searching an element in a B-tree",
+                                    "ND11": "Searching for an element in a B-tree is the generalized form of searching an element in a Binary Search Tree. The following steps are followed.",
+                                    "ND12": "1. Starting from the root node, compare k with the first key of the node. If k = the first key of the node, return the node and the index.",
+                                    "ND13": "2. If k.leaf = true, return NULL (i.e. not found).",
+                                    "ND14": "3. If k < the first key of the root node, search the left child of this key recursively.",
+                                    "ND15": "4. If there is more than one key in the current node and k > the first key, compare k with the next key in the node.<br>If k < next key, search the left child of this key (ie. k lies in between the first and the second keys).<br>Else, search the right child of the key.",
+                                    "ND16": "5. Repeat steps 1 to 4 until the leaf is reached.",
+                                    "oper2": "Searching Example",
+                                    "ND21": "1. Let us search key k = 17 in the tree below of degree 3.",
+                                    "ND22": "2. k is not found in the root so, compare it with the root key.",
+                                    "ND23": "3. Since k > 11, go to the right child of the root node.",
+                                    "ND24": "4. Compare k with 16. Since k > 16, compare k with the next key 18.",
+                                    "ND25": "5. Since k < 18, k lies between 16 and 18. Search in the right child of 16 or the left child of 18.",
+                                    "ND26": "6. k is found.",
+                                    "complex": "- Worst case Time complexity: Θ(log n)<br>- Average case Time complexity: Θ(log n)<br>- Best case Time complexity: Θ(log n)<br>- Average case Space complexity: Θ(n)<br>- Worst case Space complexity: Θ(n)",
+                                    "application": "1. databases and file systems<br>2. to store blocks of data (secondary storage media)<br>3. multilevel indexing"
+                                }]
+                            }],
+                            "content2": "Red-Black Tree",
+                            "bai2": [{
+                                "title": "In this tutorial, you will learn what a red-black tree is. ",
+                                "noidung": [{
+                                    "DN1": "Red-Black tree is a self-balancing binary search tree in which each node contains an extra bit for denoting the color of the node, either red or black.",
+                                    "DN2": "A red-black tree satisfies the following properties:<br>1. Red/Black Property: Every node is colored, either red or black.<br>2. Root Property: The root is black.<br>3. Leaf Property: Every leaf (NIL) is black.<br>4. Red Property: If a red node has children then, the children are always black.<br>5. Depth Property: For each node, any simple path from this node to any of its descendant leaf has the same black-depth (the number of black nodes).",
+                                    "DN3": "Each node has the following attributes:<br>- color<br>- key<br>- leftChild<br>- rightChild<br>- parent (except root node)",
+                                    "oper1": "Full Binary Tree",
+                                    "ND1": "A full Binary tree is a special type of binary tree in which every parent node/internal node has either two or no children.",
+                                    "oper2": "Perfect Binary Tree",
+                                    "ND2": "A perfect binary tree is a type of binary tree in which every internal node has exactly two child nodes and all the leaf nodes are at the same level.",
+                                    "oper3": "Complete Binary Tree",
+                                    "ND3": "A complete binary tree is just like a full binary tree, but with two major differences<br>1. Every level must be completely filled<br>2. All the leaf elements must lean towards the left.<br>3. The last leaf element might not have a right sibling i.e. a complete binary tree doesn't have to be a full binary tree.",
+                                    "oper4": "Degenerate or Pathological Tree",
+                                    "ND4": "A degenerate or pathological tree is the tree having a single child either left or right.",
+                                    "oper5": " Skewed Binary Tree",
+                                    "ND5": "A skewed binary tree is a pathological/degenerate tree in which the tree is either dominated by the left nodes or the right nodes. Thus, there are two types of skewed binary tree: left-skewed binary tree and right-skewed binary tree.",
+                                    "oper6": "Balanced Binary Tree",
+                                    "ND6": "It is a type of binary tree in which the difference between the height of the left and the right subtree for each node is either 0 or 1.",
+                                    "application": "1. For easy and quick access to data<br>2. In router algorithms<br>3. To implement heap data structure<br>4. Syntax tree"
+                                }]
+                            }]
+                        }]
+                    }
+                ]
+            }
