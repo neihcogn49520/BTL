@@ -2,14 +2,14 @@
     "posts": [{
             "content": "Data Structures (I)",
             "id": 1,
-            "category": "Logic",
+            "category": "DSI",
             "data": [{
                 "content1": "Stack",
                 "val": "1",
                 "bai1": [{
                     "title": "In this tutorial, you will learn about the stack data structure.",
                     "noidung": [{
-                        "DN": "<br>A stack is a linear data structure that follows the principle of Last In First Out (LIFO). This means the last element inserted inside the stack is removed first.<br>You can think of the stack data structure as the pile of plates on top of another.",
+                        "DN": "A stack is a linear data structure that follows the principle of Last In First Out (LIFO). This means the last element inserted inside the stack is removed first.<br>You can think of the stack data structure as the pile of plates on top of another.",
                         "DN1": "Here, you can:<br>- Put a new plate on top<br>- Remove the top plate<br>And, if you want the plate at the bottom, you must first remove all the plates on top. This is exactly how the stack data structure works.",
                         "methods": "In programming terms, putting an item on top of the stack is called push and removing an item is called pop.<br>In the above image, although item 3 was kept last, it was removed first. This is exactly how the LIFO (Last In First Out) Principle works.",
                         "work": "The operations work as follows:<br>1. A pointer called TOP is used to keep track of the top element in the stack.<br>2. When initializing the stack, we set its value to -1 so that we can check if the stack is empty by comparing TOP == -1.<br>3. On pushing an element, we increase the value of TOP and place the new element in the position pointed to by TOP.<br>4. On popping an element, we return the element pointed to by TOP and reduce its value.<br>5. Before pushing, we check if the stack is already full.<br>6. Before popping, we check if the stack is already empty",
@@ -25,7 +25,8 @@
                         "DN": "A priority queue is a special type of queue in which each element is associated with a priority value. And, elements are served on the basis of their priority. That is, higher priority elements are served first.<br>However, if elements with the same priority occur, they are served according to their order in the queue.",
                         "DN1": "In the above image, since 1 was kept in the queue before 2, it is the first to be removed from the queue as well. It follows the FIFO rule.<br>In programming terms, putting items in the queue is called enqueue, and removing items from the queue is called dequeue.",
                         "methods": "Queue operations work as follows:<br>- two pointers FRONT and REAR<br>- FRONT track the first element of the queue<br>- REAR track the last element of the queue<br>- initially, set value of FRONT and REAR to -1",
-                        "operation": "A queue is an object (an abstract data structure - ADT) that allows the following operations:<br>- Enqueue: Add an element to the end of the queue<br>- Dequeue: Remove an element from the front of the queue<br>- IsEmpty: Check if the queue is empty<br>- IsFull: Check if the queue is full<br>- Peek: Get the value of the front of the queue without removing it"
+                        "operation": "A queue is an object (an abstract data structure - ADT) that allows the following operations:<br>- Enqueue: Add an element to the end of the queue<br>- Dequeue: Remove an element from the front of the queue<br>- IsEmpty: Check if the queue is empty<br>- IsFull: Check if the queue is full<br>- Peek: Get the value of the front of the queue without removing it",
+                        "applcation": "- CPU scheduling, Disk Scheduling<br>- When data is transferred asynchronously between two processes.The queue is used for synchronization. For example: IO Buffers, pipes, file IO, etc<br>- Handling of interrupts in real-time systems.<br>- Call Center phone systems use Queues to hold people calling them in order."
                     }]
                 }],
                 "content3": "Priority Queue",
@@ -48,38 +49,30 @@
         {
             "content": "Data Structures (II)",
             "id": 2,
-            "category": "QH",
+            "category": "DSII",
             "data": [{
-                "content1": "Bài 1:Quan hệ hai ngôi",
+                "content1": "Single Linked List",
                 "bai1": [{
-                    "title": "   Định nghĩa 1: Một quan hệ hai ngôi từ tập A đến tập B là tập con R của tích Descartes A × B.                    ",
+                    "title": "In this tutorial, you will learn about linked list data structure.",
                     "noidung": [{
-                        "ex": "+ Ví dụ <br> Cho A = {0, 1, 2} và B = {a, b}. Khi đó <br>R = {(0, a), (0, b), (1, a), (2, b)}<br>là một quan hệ từ A vào B. Quan hệ này được mô tả bằng",
-                        "KH": "+ kí hiệu: người ta dùng các ký hiệu P, Q, R... để chỉ mệnh đề.",
-                        "img": "B:\\Dowload\\TT-UD-main\\TT-UD-main\\src\\img\\Capture2",
-                        "DN": "Một quan hệ trên tập hợp A là một quan hệ hai ngôi từ A đến chính nó. ",
-                        "DN1": "Các tính chất của Quan hệ<br>Cho R là quan hệ trên A. Ta nói",
-                        "ex1": "R phản xạ ⇔ ∀x ∈ A, xRx.<br>R đối xứng ⇔ ∀x, y ∈ A, xRy → yRx.<br>R phản xứng ⇔ ∀x, y ∈ A, xRy ∧ yRx → x = y.<br>R bắc cầu (hay còn gọi là truyền) ⇔<br> ∀x, y, z ∈ A, xRy ∧ yRz → xRz."
-                    }],
-                    "KTLQ": [{
-                        "text1": "Biểu diễn quan hệ"
-
+                        "DN": "A linked list is a linear data structure that includes a series of connected nodes. Here, each node stores the data and the address of the next node.",
+                        "DN1": "Here, you can:<br>- Put a new plate on top<br>- Remove the top plate<br>And, if you want the plate at the bottom, you must first remove all the plates on top. This is exactly how the stack data structure works.",
+                        "methods": "In programming terms, putting an item on top of the stack is called push and removing an item is called pop.<br>In the above image, although item 3 was kept last, it was removed first. This is exactly how the LIFO (Last In First Out) Principle works.",
+                        "work": "The operations work as follows:<br>1. A pointer called TOP is used to keep track of the top element in the stack.<br>2. When initializing the stack, we set its value to -1 so that we can check if the stack is empty by comparing TOP == -1.<br>3. On pushing an element, we increase the value of TOP and place the new element in the position pointed to by TOP.<br>4. On popping an element, we return the element pointed to by TOP and reduce its value.<br>5. Before pushing, we check if the stack is already full.<br>6. Before popping, we check if the stack is already empty",
+                        "operation": "There are some basic operations that allow us to perform different actions on a stack.<br>- Push: Add an element to the top of a stack<br>- Pop: Remove an element from the top of a stack<br>- IsEmpty: Check if the stack is empty<br>- IsFull: Check if the stack is full<br>- Peek: Get the value of the top element without removing it",
+                        "application": "Although stack is a simple data structure to implement, it is very powerful. The most common uses of a stack are:<br>- To reverse a word - Put all the letters in a stack and pop them out. Because of the LIFO order of stack, you will get the letters in reverse order.<br>- In compilers - Compilers use the stack to calculate the value of expressions like 2 + 4 / 5 * (7 - 9) by converting the expression to prefix or postfix form.<br>- In browsers - The back button in a browser saves all the URLs you have visited previously in a stack. Each time you visit a new page, it is added on top of the stack. When you press the back button, the current URL is removed from the stack, and the previous URL is accessed."
                     }]
                 }],
-                "content2": "Bài 2: Quan hệ tương đương",
+                "content2": "Double Linked List",
                 "bai2": [{
-                    "title": "Mệnh đề: là một khẳng định có giá trị chân lý xác định, đúng hoặc sai. Câu hỏi, câu cảm thán, mệnh lệnh... không là mệnh đề.",
+                    "title": "In this tutorial, you will learn about the doubly linke list.",
                     "noidung": [{
-                        "ex": "Ví dụ. Cho R là quan hệ trên Z, được xác định bởi <br> ∀x, y ∈ Z, xRy ⇔ x + y chẵn.<br> Khi đó R là quan hệ tương đương. ",
-                        "ex1": "Ví dụ. Quan hệ R trên các chuỗi ký tự xác định bởi <br> aRb ⇔ a và b có cùng độ dài. <br> Khi đó R là quan hệ tương đương",
-                        "KH": "Lớp Tương đươngCho R là quan hệ tương đương trên A và x thuộc A. Khi đó, tập hợp tất cả các phần tử trong A có quan hệ với x được gọi là lớp tương đương của x, ký hiệu bởi x hoặc [x]                        "
-                    }],
-                    "KTLQ": [{
-                        "text1": "Quan hệ đồng dư trên Z"
-
+                        "DN": "A doubly linked list is a type of linked list in which each node consists of 3 components:<br>- *prev - address of the previous node<br>- data - data item<br>- *next - address of next node",
+                        "operation": "There are some basic operations that allow us to perform different actions on a stack.<br>- Push: Add an element to the top of a stack<br>- Pop: Remove an element from the top of a stack<br>- IsEmpty: Check if the stack is empty<br>- IsFull: Check if the stack is full<br>- Peek: Get the value of the top element without removing it",
+                        "application": "1. Redo and undo functionality in software.<br>2. Forward and backward navigation in browsers.<br>3. For navigation systems where forward and backward navigation is required."
                     }]
                 }],
-                "content3": "Bài 3:Quan hệ thứ tự",
+                "content3": "Hash Table",
                 "bai3": [{
                     "title": "Quan hệ R trên tập hợp A được gọi là quan hệ thứ tự nếu nó thỏa mãn các tính chất phản xạ, phản xứng và bắc cầu. Khi đó (A, R) được gọi là một tập thứ tự   ",
                     "noidung": [{
@@ -87,10 +80,6 @@
                         "KH": "Phần tử Trội Cho (A, ) là một tập thứ tự và x, y ∈ A. Khi đó: <br>1 Nếu x  y thì ta nói y là trội của x hoặc x được trội bởi y. <br>2 Nếu x ≺ y thì ta nói y là trội thật sự của x. <br>3 Nếu x ≺ y và không tồn tại z ∈ A sao cho x ≺ z ≺ y thì ta nói y là trội trực tiếp của x",
                         "KH1": "Biểu đồ Hasse:Biểu đồ Hasse của tập thứ tự (A, ) là một đồ thị có hướng ",
                         "KH2": "Phần tử Cực trị"
-                    }],
-                    "KTLQ": [{
-                        "text1": "Thứ tự toàn phần"
-
                     }]
                 }]
             }]

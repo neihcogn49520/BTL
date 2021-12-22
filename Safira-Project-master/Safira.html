@@ -62,8 +62,12 @@
                                     <span class="icon-nav"><i class="fas fa-chevron-right"></i></span>
                                     <ul class="dropright chickpea">
                                         <li><a href="">Single Linked List</a></li>
-                                        <li><a href="">Hash Table</a></li>
-                                        <li><a href="">Double Linked List</a></li>
+                                        <li>
+                                            <a href="">Double Linked List</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Hash Table</a>
+                                        </li>
                                     </ul>
                                 </li>
                                 <li>
@@ -72,7 +76,6 @@
                                     <ul class="dropright chickpea">
                                         <li><a href="">Tree Data Structure</a></li>
                                         <li><a href="">Binary Tree</a></li>
-                                        <li><a href="">Full Binary Tree</a></li>
                                         <li><a href="">Binary Search Tree</a></li>
                                     </ul>
                                 </li>
@@ -81,7 +84,6 @@
                                     <span class="icon-nav"><i class="fas fa-chevron-right"></i></span>
                                     <ul class="dropright chickpea">
                                         <li><a href="">B Tree</a></li>
-                                        <li><a href="">B+ Tree</a></li>
                                         <li><a href="">Red-Black Tree</a></li>
                                     </ul>
                                 </li>
@@ -91,7 +93,6 @@
                                     <ul class="dropright chickpea">
                                         <li><a href="">Graph Data Structure</a></li>
                                         <li><a href="">DFS Algorithm</a></li>
-                                        <li><a href="">Spanning Tree</a></li>
                                     </ul>
                                 </li>
                                 <li><span class="format-child">Sorting Algorithms</span>
@@ -100,8 +101,6 @@
                                         <li><a href="">Bubble Sort</a></li>
                                         <li><a href="">Selection Sort</a></li>
                                         <li><a href="">Insertion Sort</a></li>
-                                        <li><a href="">Merge Sort</a></li>
-                                        <li><a href="">Quicksort</a></li>
                                     </ul>
                                 </li>
                                 <li><span class="format-child">Searching Algorithms</span>
@@ -117,7 +116,6 @@
                                         <li><a href="">Greedy Algorithm</a></li>
                                         <li><a href="">Dijkstra's Algorithm</a></li>
                                         <li><a href="">Kruskal's Algorithm</a></li>
-                                        <li><a href="">Prim's Algorithm</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -132,7 +130,7 @@
                                 </li>
                                 <li>
                                     <input type="checkbox" value="None" id="squaredcheck" class="checkbox1" name="check" checked />
-                                    <label for="squaredcheck"><span>Methods</span></label>
+                                    <label for="squaredcheck"><span>Operations</span></label>
                                 </li>
                                 <li>
                                     <input type="checkbox" value="None" id="squaredcheck" class="checkbox1" name="check" checked />
@@ -140,7 +138,7 @@
                                 </li>
                                 <li>
                                     <input type="checkbox" value="None" id="squaredcheck" class="checkbox1" name="check" checked />
-                                    <label for="squaredcheck"><span>Operations</span></label>
+                                    <label for="squaredcheck"><span>Application</span></label>
                             </ul>
                         </div>
                         <div class="slider">
@@ -168,9 +166,34 @@
                 </div>
                 <div class="services-safira row" style="display: block;">
                     <h1 class="definition">Definition</h1>
-                    <p>
-
-                    </p>
+                    <pre class="unspecified-exec" style="max-height: 600px;"><code class="dsa hljs rust"><span class="hljs-comment">/* Initialize nodes */</span>
+                        <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">node</span></span> *head;
+                        <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">node</span></span> *one = NULL;
+                        <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">node</span></span> *two = NULL;
+                        <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">node</span></span> *three = NULL;
+                        
+                        <span class="hljs-comment">/* Allocate memory */</span>
+                        one = malloc(sizeof(<span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">node</span></span>));
+                        two = malloc(sizeof(<span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">node</span></span>));
+                        three = malloc(sizeof(<span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">node</span></span>));
+                        
+                        <span class="hljs-comment">/* Assign data values */</span>
+                        one-&gt;data = <span class="hljs-number">1</span>;
+                        two-&gt;data = <span class="hljs-number">2</span>;
+                        three-&gt;data = <span class="hljs-number">3</span>;
+                        
+                        <span class="hljs-comment">/* Connect nodes */</span>
+                        one-&gt;next = two;
+                        one-&gt;prev = NULL;
+                        
+                        two-&gt;next = three;
+                        two-&gt;prev = one;
+                        
+                        three-&gt;next = NULL;
+                        three-&gt;prev = two;
+                        
+                        <span class="hljs-comment">/* Save address of first node in head */</span>
+                        head = one;</code></pre>
                     <h1 class="operation">Operations</h1>
                     <h1 class="methods">Methods</h1>
                     <h1 class="application">Application of Stack Data Structures & Algorithms</h1>
