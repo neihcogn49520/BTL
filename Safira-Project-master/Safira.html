@@ -47,14 +47,14 @@
                                 <button class="c-pointer"><span class="title white-color">All Lession</span></button>
                                 <!-- <span class="down"><i class="fas fa-chevron-down"></i></span> -->
                             </div>
-                            <ul class="list-content">
+                            <ul class="list-content" id="myTable">
                                 <li>
                                     <span class="format-child">Data Structures (I)</span>
                                     <span class="icon-nav"><i class="fas fa-chevron-right"></i></span>
                                     <ul class="dropright chickpea">
-                                        <li><a href="">Stack</a> </li>
-                                        <li><a href="">Queue</a> </li>
-                                        <li><a href="">Priority Queue</a></li>
+                                        <li class="stack"><a href="">Stack</a> </li>
+                                        <li class="queue"><a href="">Queue</a> </li>
+                                        <li class="priority"><a href="">Priority Queue</a></li>
                                     </ul>
                                 </li>
                                 <li>
@@ -112,26 +112,10 @@
                         </div>
                     </div>
                     <div class="right col-lg-9 col-xl-9">
-                        <div class="horizen-nav">
-                            <ul class="d-flex">
-                                <li>
-                                    <input type="checkbox" value="None" id="squaredcheck" class="checkbox1" name="check" checked />
-                                    <label for="squaredcheck"><span>Definition</span></label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" value="None" id="squaredcheck" class="checkbox1" name="check" checked />
-                                    <label for="squaredcheck"><span>Operations</span></label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" value="None" id="squaredcheck" class="checkbox1" name="check" checked />
-                                    <label for="squaredcheck"><span>Implementation</span></label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" value="None" id="squaredcheck" class="checkbox1" name="check" checked />
-                                    <label for="squaredcheck"><span>Application</span></label>
-                            </ul>
+                        <div class="myform" id="checkboxs">
                         </div>
-                        <div class="slider">
+
+                        <!-- <div class="slider">
                             <div id="caro-slider">
                                 <div class="owl-carousel owl-theme">
                                     <div class="item">
@@ -151,12 +135,21 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="services-safira row" style="display: block;">
-                    <h1 class="definition">Definition</h1>
-                    <pre class="unspecified-exec" style="max-height: 600px;"><code class="dsa hljs rust"><span class="hljs-comment">/* Initialize nodes */</span>
+                    <div class="nd-title">
+                    </div>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> I have a bike</label><br>
+                    <div class="def">
+                        <h1 class="definition">Definition </h1>
+                        <div class="nd-definition">
+                        </div>
+                    </div>
+                    <!-- <pre class="unspecified-exec" style="max-height: 600px;">
+                        <code class="dsa hljs rust"><span class="hljs-comment">/* Initialize nodes */</span>
                         <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">node</span></span> *head;
                         <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">node</span></span> *one = NULL;
                         <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">node</span></span> *two = NULL;
@@ -183,10 +176,23 @@
                         three-&gt;prev = two;
                         
                         <span class="hljs-comment">/* Save address of first node in head */</span>
-                        head = one;</code></pre>
-                    <h1 class="operation">Operations</h1>
-                    <h1 class="methods">Complexity</h1>
-                    <h1 class="application">Application</h1>
+                        head = one;</code>
+                    </pre> -->
+                    <div class="ope">
+                        <h1 class="operation">Operations</h1>
+                        <div class="nd-operation">
+                        </div>
+                    </div>
+                    <div class="com">
+                        <h1 class="methods">Complexity</h1>
+                        <div class="nd-methods">
+                        </div>
+                    </div>
+                    <div class="app">
+                        <h1 class="application">Application</h1>
+                        <div class="nd-application">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -208,14 +214,16 @@
                 <p><span class="white-color fw-600">Products added</span></p>
             </div>
         </div>
+        <button class="demo">click me</button>
     </main>
     <footer>
         <div class="safira-footer bg-footer  pt-50">
+
             <div class="container">
                 <div class="safira-overview row font-1 white-color">
                     <div class="col-lg-4 col-xl-4">
                         <div class="logo mb-20">
-                            <img class="img-logo" src="http://demo.roadthemes.com/safira/wp-content/uploads/2020/06/Logox2_white.png" alt="">
+                            <img class="img-logo" src="" alt="">
                         </div>
                         <p class="footer-brand f-14 mb-20 fw-600">DATA STRUCTURES & ALGORITHM</p>
                         <p class="f-14 mb-15"><span class="fw-600 footer-addr">Address:</span> 450/451 Đường Lê Văn Việt, p.Tăng Nhơn Phú A, Q.9, TPHCM</p>
@@ -266,10 +274,15 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script src="js/animation.js"></script>
-<script src="js/Safira.js"></script>
+<!-- <script src="js/Safira.js"></script>
 <script src="js/new_products.js"></script>
 <script src="js/our_blog.js"></script>
-<script src="js/heart_products.js"></script>
+<script src="js/heart_products.js"></script> -->
+<script src="js/sidebar.js"></script>
 <script src="js/api.js"></script>
+<script src="js/checkbox.js"></script>
+
+
+
 
 </html>

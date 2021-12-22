@@ -389,61 +389,44 @@
                 .wrap-item {
                     @include cssItem();
                 }
-                .horizen-nav {
-                    ul {
-                        >li {
-                            position: relative;
-                            margin-right: 30px;
-                            label {
-                                width: 16px;
-                                height: 16px;
-                                cursor: pointer;
-                                top: 5px;
-                                left: 0;
-                                border-radius: 4px;
-                                &:after {
-                                    content: '';
-                                    width: 10px;
-                                    height: 5px;
-                                    top: 4px;
-                                    left: 3px;
-                                    border: 2px solid #fff;
-                                    border-top: none;
-                                    border-right: none;
-                                    background: transparent;
-                                    opacity: 0;
-                                    transform: rotate(-45deg);
-                                }
-                                span {
-                                    &:first-child {
-                                        font-size: 15px;
-                                        font-weight: bolder;
-                                    }
-                                }
-                                color: #222;
-                                padding-bottom: 20px;
-                                &:hover {
-                                    color: $orange-color;
-                                }
-                            }
-                            input[type=checkbox] {
-                                visibility: hidden;
-                                &:checked+label {
-                                    background: #ffffff;
-                                }
-                                &:checked+label:after {
-                                    opacity: 1;
-                                }
-                                &.checkbox1+label {
-                                    background: lighten(#0096FF, 20%);
-                                }
-                                &.checkbox1 {
-                                    &:checked+label {
-                                        background: #0096FF;
-                                    }
-                                }
+                .myform {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 30px 0;
+                    input[type='checkbox'] {
+                        position: relative;
+                        width: 40px;
+                        height: 20px;
+                        border-radius: 10px;
+                        background-color: rgba(#00ff37, 0.3);
+                        box-shadow: inset -1px -1px 3px rgba(lighten(#222831, 70%), 0.3), inset 1px 1px 3px rgba(#222831, 0.3);
+                        cursor: pointer;
+                        appearance: none;
+                        transition: background-color .45;
+                        &:before {
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            top: 50%;
+                            left: 0;
+                            transform: translate(-5px, -50%);
+                            width: 22px;
+                            height: 22px;
+                            border-radius: 50px;
+                            background-color: #fffafa;
+                            box-shadow: 1px 1px 2px rgba(#222831, .9), inset 1px 1px 2px lighten(#fffafa, 10%), inset -1px -1px 2px rgba(#0a0a0a, 0.1);
+                            transition: transform 0.4s;
+                        }
+                        &:checked {
+                            background-color: #00ff37;
+                            &:before {
+                                transform: translate(22px, -50%);
                             }
                         }
+                    }
+                    label {
+                        padding-right: 20px;
                     }
                 }
                 .slider {

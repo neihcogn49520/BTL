@@ -4,7 +4,7 @@
             "id": 1,
             "category": "DSI",
             "data": [{
-                "content1": "Stack",
+                "content1": "Stack Data Structures",
                 "val": "1",
                 "bai1": [{
                     "title": "In this tutorial, you will learn about the stack data structure.",
@@ -19,7 +19,7 @@
                     }]
                 }],
                 "content2": "Queue",
-
+                "val1": "2",
                 "bai2": [{
                     "title": "In this tutorial, you will learn what a queue is.",
                     "noidung": [{
@@ -80,7 +80,7 @@
             }]
         },
         {
-            "content": "Tree based DSA (I)",
+            "content": "Tree based DSA",
             "id": 3,
             "category": "TreeI",
             "data": [{
@@ -184,10 +184,12 @@
             "data": [{
                 "content1": "Graph Data Structure",
                 "bai1": [{
-                    "title": "In this tutorial, you will learn about tree data structure.",
+                    "title": "In this tutorial, you will learn what a Graph Data Structure is.",
                     "noidung": [{
-                        "DN": "A tree is a nonlinear hierarchical data structure that consists of nodes connected by edges.",
-                        "oper1": "Why Tree Data Structure?",
+                        "DN1": "A graph data structure is a collection of nodes that have data and are connected to other nodes.",
+                        "DN2": "Let's try to understand this through an example. On facebook, everything is a node. That includes User, Photo, Album, Event, Group, Page, Comment, Story, Video, Link, Note...anything that has data is a node.<br>Every relationship is an edge from one node to another. Whether you post a photo, join a group, like a page, etc., a new edge is created for that relationship.",
+                        "DN3": "All of facebook is then a collection of these nodes and edges. This is because facebook uses a graph data structure to store its data.<br>More precisely, a graph is a data structure (V, E) that consists of<br>- A collection of vertices V<br>- A collection of edges E, represented as ordered pairs of vertices (u,v)",
+                        "oper1": "The most common graph operations are:<br>- Check if the element is present in the graph<br>- Graph Traversal<br>- Add elements(vertex, edges) to graph<br>- Finding the path from one vertex to another",
                         "ND1": "Other data structures such as arrays, linked list, stack, and queue are linear data structures that store data sequentially. In order to perform any operation in a linear data structure, the time complexity increases with the increase in the data size. But, it is not acceptable in today's computational world.<br>Different tree data structures allow quicker and easier access to the data as it is a non-linear data structure.",
                         "oper2": "Tree Terminologies",
                         "ND21": "A node is an entity that contains a key or value and pointers to its child nodes.<br>The last nodes of each path are called leaf nodes or external nodes that do not contain a link/pointer to child nodes.<br>The node having at least a child node is called an internal node.",
