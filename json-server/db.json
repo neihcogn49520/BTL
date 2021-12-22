@@ -56,11 +56,10 @@
                     "title": "In this tutorial, you will learn about linked list data structure.",
                     "noidung": [{
                         "DN": "A linked list is a linear data structure that includes a series of connected nodes. Here, each node stores the data and the address of the next node.",
-                        "DN1": "Here, you can:<br>- Put a new plate on top<br>- Remove the top plate<br>And, if you want the plate at the bottom, you must first remove all the plates on top. This is exactly how the stack data structure works.",
-                        "methods": "In programming terms, putting an item on top of the stack is called push and removing an item is called pop.<br>In the above image, although item 3 was kept last, it was removed first. This is exactly how the LIFO (Last In First Out) Principle works.",
-                        "work": "The operations work as follows:<br>1. A pointer called TOP is used to keep track of the top element in the stack.<br>2. When initializing the stack, we set its value to -1 so that we can check if the stack is empty by comparing TOP == -1.<br>3. On pushing an element, we increase the value of TOP and place the new element in the position pointed to by TOP.<br>4. On popping an element, we return the element pointed to by TOP and reduce its value.<br>5. Before pushing, we check if the stack is already full.<br>6. Before popping, we check if the stack is already empty",
-                        "operation": "There are some basic operations that allow us to perform different actions on a stack.<br>- Push: Add an element to the top of a stack<br>- Pop: Remove an element from the top of a stack<br>- IsEmpty: Check if the stack is empty<br>- IsFull: Check if the stack is full<br>- Peek: Get the value of the top element without removing it",
-                        "application": "Although stack is a simple data structure to implement, it is very powerful. The most common uses of a stack are:<br>- To reverse a word - Put all the letters in a stack and pop them out. Because of the LIFO order of stack, you will get the letters in reverse order.<br>- In compilers - Compilers use the stack to calculate the value of expressions like 2 + 4 / 5 * (7 - 9) by converting the expression to prefix or postfix form.<br>- In browsers - The back button in a browser saves all the URLs you have visited previously in a stack. Each time you visit a new page, it is added on top of the stack. When you press the back button, the current URL is removed from the stack, and the previous URL is accessed."
+                        "DN1": "You have to start somewhere, so we give the address of the first node a special name called HEAD. Also, the last node in the linked list can be identified because its next portion points to NULL.<br>Linked lists can be of multiple types: singly, doubly, and circular linked list. In this article, we will focus on the singly linked list.",
+                        "work1": "Let's see how each node of the linked list is represented. Each node consists:<br>- A data item<br>An address of another node<br>Understanding the structure of a linked list node is the key to having a grasp on it.<br>Each struct node has a data item and a pointer to another struct node. Let us create a simple Linked List with three items to understand how this works.",
+                        "work2": "The power of a linked list comes from the ability to break the chain and rejoin it. E.g. if you wanted to put an element 4 between 1 and 2, the steps would be:<br>- Create a new struct node and allocate memory to it.<br>- Add its data value as 4<br>Point its next pointer to the struct node containing 2 as the data value<br>- Change the next pointer of '1' to the node we just created.<br>Doing something similar in an array would have required shifting the positions of all the subsequent elements.",
+                        "application": "- Dynamic memory allocation<br>- Implemented in stack and queue<br>- In undo functionality of softwares<br>- Hash tables, Graphs"
                     }]
                 }],
                 "content2": "Double Linked List",
@@ -68,68 +67,132 @@
                     "title": "In this tutorial, you will learn about the doubly linke list.",
                     "noidung": [{
                         "DN": "A doubly linked list is a type of linked list in which each node consists of 3 components:<br>- *prev - address of the previous node<br>- data - data item<br>- *next - address of next node",
-                        "operation": "There are some basic operations that allow us to perform different actions on a stack.<br>- Push: Add an element to the top of a stack<br>- Pop: Remove an element from the top of a stack<br>- IsEmpty: Check if the stack is empty<br>- IsFull: Check if the stack is full<br>- Peek: Get the value of the top element without removing it",
+                        "oper1": "Insertion on a Doubly Linked List",
+                        "ND1": "Pushing a node to a doubly-linked list is similar to pushing a node to a linked list, but extra work is required to handle the pointer to the previous node.<br>We can insert elements at 3 different positions of a doubly-linked list:<br>- Insertion at the beginning<br>- Insertion in-between nodes<br>- Insertion at the End<br>Suppose we have a double-linked list with elements 1, 2, and 3.",
+                        "oper2": "Deletion from a Doubly Linked List",
+                        "ND2": "Similar to insertion, we can also delete a node from 3 different positions of a doubly linked list.<br>- Delete the First Node of Doubly Linked List<br>- Deletion of the Inner Node<br>- Delete the Last Node of Doubly Linked List",
                         "application": "1. Redo and undo functionality in software.<br>2. Forward and backward navigation in browsers.<br>3. For navigation systems where forward and backward navigation is required."
-                    }]
-                }],
-                "content3": "Hash Table",
-                "bai3": [{
-                    "title": "Quan hệ R trên tập hợp A được gọi là quan hệ thứ tự nếu nó thỏa mãn các tính chất phản xạ, phản xứng và bắc cầu. Khi đó (A, R) được gọi là một tập thứ tự   ",
-                    "noidung": [{
-                        "DN": "Nếu R là một thứ tự trên tập hợp A thì ta ký hiệu a b thay cho aRb, và ký hiệu a ≺ b thay cho a b nhưng a 6= b.  ",
-                        "KH": "Phần tử Trội Cho (A, ) là một tập thứ tự và x, y ∈ A. Khi đó: <br>1 Nếu x  y thì ta nói y là trội của x hoặc x được trội bởi y. <br>2 Nếu x ≺ y thì ta nói y là trội thật sự của x. <br>3 Nếu x ≺ y và không tồn tại z ∈ A sao cho x ≺ z ≺ y thì ta nói y là trội trực tiếp của x",
-                        "KH1": "Biểu đồ Hasse:Biểu đồ Hasse của tập thứ tự (A, ) là một đồ thị có hướng ",
-                        "KH2": "Phần tử Cực trị"
                     }]
                 }]
             }]
         },
         {
-            "content": "Chương 3: Boole",
+            "content": "Tree based DSA (II)",
             "id": 3,
-            "category": "Bool",
+            "category": "TreeI",
             "data": [{
-                "content1": "Bài 1:Hàm Boole",
+                "content1": "Tree Data Structure",
                 "bai1": [{
-                    "title": "  Một hàm Boole n biến là ánh xạ                     ",
+                    "title": "In this tutorial, you will learn about tree data structure.",
                     "noidung": [{
-                        "ex": "+ Như vậy hàm Boole n biến là một hàm số có dạng : f = f(x1, x2, . . . , xn), ",
-                        "KH": "+ Ví dụ. f(x, y, z, t) = (x ∨ z)t ∨ (x y ∨ y t)z ∨ (y z ∨ x y z)t là hàm Boole 4 biến",
-                        "img": "B:\\Dowload\\TT-UD-main\\TT-UD-main\\src\\img\\manglogic1.PNG",
-                        "DN": "Một quan hệ trên tập hợp A là một quan hệ hai ngôi từ A đến chính nó. ",
-                        "DN1": "Các tính chất của Quan hệ<br>Cho R là quan hệ trên A. Ta nói",
-                        "ex1": "R phản xạ ⇔ ∀x ∈ A, xRx.<br>R đối xứng ⇔ ∀x, y ∈ A, xRy → yRx.<br>R phản xứng ⇔ ∀x, y ∈ A, xRy ∧ yRx → x = y.<br>R bắc cầu (hay còn gọi là truyền) ⇔<br> ∀x, y, z ∈ A, xRy ∧ yRz → xRz."
-                    }],
-                    "KTLQ": [{
-                        "text1": "Biểu diễn quan hệ"
-
+                        "DN": "A tree is a nonlinear hierarchical data structure that consists of nodes connected by edges.",
+                        "oper1": "Why Tree Data Structure?",
+                        "ND1": "Other data structures such as arrays, linked list, stack, and queue are linear data structures that store data sequentially. In order to perform any operation in a linear data structure, the time complexity increases with the increase in the data size. But, it is not acceptable in today's computational world.<br>Different tree data structures allow quicker and easier access to the data as it is a non-linear data structure.",
+                        "oper2": "Tree Terminologies",
+                        "ND21": "A node is an entity that contains a key or value and pointers to its child nodes.<br>The last nodes of each path are called leaf nodes or external nodes that do not contain a link/pointer to child nodes.<br>The node having at least a child node is called an internal node.",
+                        "ND22": "It is the link between any two nodes.",
+                        "ND23": "It is the topmost node of a tree.",
+                        "ND24": "The height of a node is the number of edges from the node to the deepest leaf (ie. the longest path from the node to a leaf node).",
+                        "ND25": "The depth of a node is the number of edges from the root to the node.",
+                        "ND26": "The height of a Tree is the height of the root node or the depth of the deepest node.",
+                        "ND27": "The degree of a node is the total number of branches of that node.",
+                        "ND28": "A collection of disjoint trees is called a forest.<br>You can create a forest by cutting the root of a tree.",
+                        "oper3": "Types of Tree",
+                        "ND3": "- Binary Tree<br>- Binary Search Tree<br>- B-Tree",
+                        "application": "1. Binary Search Trees(BSTs) are used to quickly check whether an element is present in a set or not.<br>2. Heap is a kind of tree that is used for heap sort.<br>3. A modified version of a tree called Tries is used in modern routers to store routing information.<br>4. Most popular databases use B-Trees and T-Trees, which are variants of the tree structure we learned above to store their data<br>5. Compilers use a syntax tree to validate the syntax of every program you write."
                     }]
                 }],
-                "content2": "Bài 2: Bảng Chân Trị",
+                "content2": "Binary Tree",
                 "bai2": [{
-                    "title": "Xét hàm Boole n biến f = f(x1, x2, . . . , xn). Vì mỗi biến xi chỉ nhận một trong hai giá trị 0, 1 nên chỉ có 2 n trường hợp của bộ biến (x1, x2, . . . , xn).",
+                    "title": "In this tutorial, you will learn about binary tree and its different types.",
                     "noidung": [{
-                        "ex": "Do đó, để mô tả f, ta có thể lập bảng gồm 2 n hàng ghi tất cả các giá trị của f tùy theo 2 n trường hợp của biến. Ta gọi đây là bảng chân trị của f. ",
-                        "ex1": "Ví dụ. Xét kết quả f trong việc thông qua một quyết định dựa vào 3 phiếu bầu x, y, z. Mỗi phiếu chỉ lấy một trong hai giá trị: 1 (tán thành) hoặc 0 (bác bỏ)",
-                        "KH": "Kết qủa f là 1 (thông qua quyết định) nếu được đa số phiếu tán thành, là 0 (không thông qua quyết định) nếu đa số phiếu bác bỏ. Hãy lập bảng chân trị của f.                             "
-                    }],
-                    "KTLQ": [{
-                        "text1": "Quan hệ đồng dư trên Z"
-
+                        "DN": "A binary tree is a tree data structure in which each parent node can have at most two children. Each node of a binary tree consists of three items:<br>- data item<br>- address of left child<br>- address of right child",
+                        "work": "A node of a binary tree is represented by a structure containing a data part and two pointers to other structures of the same type.",
+                        "oper1": "Full Binary Tree",
+                        "ND1": "A full Binary tree is a special type of binary tree in which every parent node/internal node has either two or no children.",
+                        "oper2": "Perfect Binary Tree",
+                        "ND2": "A perfect binary tree is a type of binary tree in which every internal node has exactly two child nodes and all the leaf nodes are at the same level.",
+                        "oper3": "Complete Binary Tree",
+                        "ND3": "A complete binary tree is just like a full binary tree, but with two major differences<br>1. Every level must be completely filled<br>2. All the leaf elements must lean towards the left.<br>3. The last leaf element might not have a right sibling i.e. a complete binary tree doesn't have to be a full binary tree.",
+                        "oper4": "Degenerate or Pathological Tree",
+                        "ND4": "A degenerate or pathological tree is the tree having a single child either left or right.",
+                        "oper5": " Skewed Binary Tree",
+                        "ND5": "A skewed binary tree is a pathological/degenerate tree in which the tree is either dominated by the left nodes or the right nodes. Thus, there are two types of skewed binary tree: left-skewed binary tree and right-skewed binary tree.",
+                        "oper6": "Balanced Binary Tree",
+                        "ND6": "It is a type of binary tree in which the difference between the height of the left and the right subtree for each node is either 0 or 1.",
+                        "application": "1. For easy and quick access to data<br>2. In router algorithms<br>3. To implement heap data structure<br>4. Syntax tree"
                     }]
                 }],
-                "content3": "Bài 3:Dạng Nối rời chính tắc",
+                "content3": "Binary Search Tree",
                 "bai3": [{
-                    "title": "Định nghĩa. Xét tập hợp các hàm Boole Fn theo n biến x1, x2, . . . , xn.  ",
+                    "title": "In this tutorial, you will learn how Binary Search Tree works.",
                     "noidung": [{
-                        "DN": "Mỗi hàm Boole xi hay xi được gọi là từ đơn <br>Từ tối tiểu là tích khác không của đúng n từ đơn",
-                        "KH": "Nhận xét. Tập hợp các hàm Boole n biến chứa đúng 2n từ đơn và 2 n từ tối tiểu.",
-                        "KH1": "Định lý: Cho f là hàm Boole n biến x1, x2, . . . xn ",
-                        "KH2": "Nếu f là từ tối tiểu thì bảng chân trị của f có đúng một vị trí bằng 1.<br> Ngược lại, nếu f chỉ nhận giá trị 1 tại vị trí u = (a1, a2, . . . , an) thì f là từ tối tiểu có dạng f = b1 b2 . . . bn, trong đó bi =  xi nếu ai = 1; xi nếu ai = 0."
-                    }],
-                    "KTLQ": [{
-                        "text1": "Ánh Xạ <br>Tích Ánh Xạ"
-
+                        "DN1": "Binary search tree is a data structure that quickly allows us to maintain a sorted list of numbers.<br>- It is called a binary tree because each tree node has a maximum of two children.<br>- It is called a search tree because it can be used to search for the presence of a number in O(log(n)) time.<br>The properties that separate a binary search tree from a regular binary tree is<br>1. All nodes of left subtree are less than the root node<br>2. All nodes of right subtree are more than the root nodebr>3. Both subtrees of each node are also BSTs i.e. they have the above two properties",
+                        "DN2": "The binary tree on the right isn't a binary search tree because the right subtree of the node 3 contains a value smaller than it.",
+                        "oper1": "Search Operation",
+                        "ND11": "The algorithm depends on the property of BST that if each left subtree has values below root and each right subtree has values above the root.<br>If the value is below the root, we can say for sure that the value is not in the right subtree; we need to only search in the left subtree and if the value is above the root, we can say for sure that the value is not in the left subtree; we need to only search in the right subtree.",
+                        "ND12": "Let us try to visualize this with a diagram.",
+                        "ND13": "If the value is found, we return the value so that it gets propagated in each recursion step as shown in the image below.<br>If you might have noticed, we have called return search(struct node*) four times. When we return either the new node or NULL, the value gets returned again and again until search(root) returns the final result.",
+                        "ND14": "If the value is not found, we eventually reach the left or right child of a leaf node which is NULL and it gets propagated and returned.",
+                        "oper2": "Insert Operation",
+                        "ND21": "Inserting a value in the correct position is similar to searching because we try to maintain the rule that the left subtree is lesser than root and the right subtree is larger than root.<br>We keep going to either right subtree or left subtree depending on the value and when we reach a point left or right subtree is null, we put the new node there.",
+                        "ND22": "The algorithm isn't as simple as it looks. Let's try to visualize how we add a number to an existing BST.",
+                        "ND23": "We have attached the node but we still have to exit from the function without doing any damage to the rest of the tree. This is where the return node; at the end comes in handy. In the case of NULL, the newly created node is returned and attached to the parent node, otherwise the same node is returned without any change as we go up until we return to the root.<br>This makes sure that as we move back up the tree, the other node connections aren't changed.",
+                        "oper3": "Deletion Operation",
+                        "ND31": "There are three cases for deleting a node from a binary search tree.",
+                        "ocase1": "In the first case, the node to be deleted is the leaf node. In such a case, simply delete the node from the tree.",
+                        "ocase2": "In the second case, the node to be deleted lies has a single child node. In such a case follow the steps below:<br>1. Replace that node with its child node.<br>2. Remove the child node from its original position.",
+                        "ocase3": "In the third case, the node to be deleted has two children. In such a case follow the steps below:<br>1. Get the inorder successor of that node.<br>2. Replace the node with the inorder successor.<br>3. Remove the inorder successor from its original position.",
+                        "application": "1. In multilevel indexing in the database<br>2. For dynamic sorting<br>3. For managing virtual memory areas in Unix kernel"
+                    }]
+                }]
+            }]
+        },
+        {
+            "content": "Tree based DSA (II)",
+            "id": 3,
+            "category": "TreeII",
+            "data": [{
+                "content1": "B Tree",
+                "bai1": [{
+                    "title": "In this tutorial, you will learn about tree data structure.",
+                    "noidung": [{
+                        "DN": "B-tree is a special type of self-balancing search tree in which each node can contain more than one key and can have more than two children. It is a generalized form of the binary search tree.<br>It is also known as a height-balanced m-way tree.",
+                        "oper1": "Why Tree Data Structure?",
+                        "ND1": "Other data structures such as arrays, linked list, stack, and queue are linear data structures that store data sequentially. In order to perform any operation in a linear data structure, the time complexity increases with the increase in the data size. But, it is not acceptable in today's computational world.<br>Different tree data structures allow quicker and easier access to the data as it is a non-linear data structure.",
+                        "oper2": "Tree Terminologies",
+                        "ND21": "A node is an entity that contains a key or value and pointers to its child nodes.<br>The last nodes of each path are called leaf nodes or external nodes that do not contain a link/pointer to child nodes.<br>The node having at least a child node is called an internal node.",
+                        "ND22": "It is the link between any two nodes.",
+                        "ND23": "It is the topmost node of a tree.",
+                        "ND24": "The height of a node is the number of edges from the node to the deepest leaf (ie. the longest path from the node to a leaf node).",
+                        "ND25": "The depth of a node is the number of edges from the root to the node.",
+                        "ND26": "The height of a Tree is the height of the root node or the depth of the deepest node.",
+                        "ND27": "The degree of a node is the total number of branches of that node.",
+                        "ND28": "A collection of disjoint trees is called a forest.<br>You can create a forest by cutting the root of a tree.",
+                        "oper3": "Types of Tree",
+                        "ND3": "- Binary Tree<br>- Binary Search Tree<br>- B-Tree",
+                        "application": "1. databases and file systems<br>2. to store blocks of data (secondary storage media)<br>3. multilevel indexing"
+                    }]
+                }],
+                "content2": "Red-Black Tree",
+                "bai2": [{
+                    "title": "In this tutorial, you will learn about binary tree and its different types.",
+                    "noidung": [{
+                        "DN": "A binary tree is a tree data structure in which each parent node can have at most two children. Each node of a binary tree consists of three items:<br>- data item<br>- address of left child<br>- address of right child",
+                        "work": "A node of a binary tree is represented by a structure containing a data part and two pointers to other structures of the same type.",
+                        "oper1": "Full Binary Tree",
+                        "ND1": "A full Binary tree is a special type of binary tree in which every parent node/internal node has either two or no children.",
+                        "oper2": "Perfect Binary Tree",
+                        "ND2": "A perfect binary tree is a type of binary tree in which every internal node has exactly two child nodes and all the leaf nodes are at the same level.",
+                        "oper3": "Complete Binary Tree",
+                        "ND3": "A complete binary tree is just like a full binary tree, but with two major differences<br>1. Every level must be completely filled<br>2. All the leaf elements must lean towards the left.<br>3. The last leaf element might not have a right sibling i.e. a complete binary tree doesn't have to be a full binary tree.",
+                        "oper4": "Degenerate or Pathological Tree",
+                        "ND4": "A degenerate or pathological tree is the tree having a single child either left or right.",
+                        "oper5": " Skewed Binary Tree",
+                        "ND5": "A skewed binary tree is a pathological/degenerate tree in which the tree is either dominated by the left nodes or the right nodes. Thus, there are two types of skewed binary tree: left-skewed binary tree and right-skewed binary tree.",
+                        "oper6": "Balanced Binary Tree",
+                        "ND6": "It is a type of binary tree in which the difference between the height of the left and the right subtree for each node is either 0 or 1.",
+                        "application": "1. For easy and quick access to data<br>2. In router algorithms<br>3. To implement heap data structure<br>4. Syntax tree"
                     }]
                 }]
             }]
