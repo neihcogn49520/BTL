@@ -176,6 +176,244 @@
                     }]
                 }]
             }]
+        },
+        {
+            "content": "Graph based DSA",
+            "id": 4,
+            "category": "Graph",
+            "data": [{
+                "content1": "Graph Data Structure",
+                "bai1": [{
+                    "title": "In this tutorial, you will learn about tree data structure.",
+                    "noidung": [{
+                        "DN": "A tree is a nonlinear hierarchical data structure that consists of nodes connected by edges.",
+                        "oper1": "Why Tree Data Structure?",
+                        "ND1": "Other data structures such as arrays, linked list, stack, and queue are linear data structures that store data sequentially. In order to perform any operation in a linear data structure, the time complexity increases with the increase in the data size. But, it is not acceptable in today's computational world.<br>Different tree data structures allow quicker and easier access to the data as it is a non-linear data structure.",
+                        "oper2": "Tree Terminologies",
+                        "ND21": "A node is an entity that contains a key or value and pointers to its child nodes.<br>The last nodes of each path are called leaf nodes or external nodes that do not contain a link/pointer to child nodes.<br>The node having at least a child node is called an internal node.",
+                        "ND22": "It is the link between any two nodes.",
+                        "ND23": "It is the topmost node of a tree.",
+                        "ND24": "The height of a node is the number of edges from the node to the deepest leaf (ie. the longest path from the node to a leaf node).",
+                        "ND25": "The depth of a node is the number of edges from the root to the node.",
+                        "ND26": "The height of a Tree is the height of the root node or the depth of the deepest node.",
+                        "ND27": "The degree of a node is the total number of branches of that node.",
+                        "ND28": "A collection of disjoint trees is called a forest.<br>You can create a forest by cutting the root of a tree.",
+                        "oper3": "Types of Tree",
+                        "ND3": "- Binary Tree<br>- Binary Search Tree<br>- B-Tree",
+                        "application": "1. Binary Search Trees(BSTs) are used to quickly check whether an element is present in a set or not.<br>2. Heap is a kind of tree that is used for heap sort.<br>3. A modified version of a tree called Tries is used in modern routers to store routing information.<br>4. Most popular databases use B-Trees and T-Trees, which are variants of the tree structure we learned above to store their data<br>5. Compilers use a syntax tree to validate the syntax of every program you write."
+                    }]
+                }],
+                "content2": "DFS Algorithm",
+                "bai2": [{
+                    "title": "In this tutorial, you will learn about binary tree and its different types.",
+                    "noidung": [{
+                        "DN": "A binary tree is a tree data structure in which each parent node can have at most two children. Each node of a binary tree consists of three items:<br>- data item<br>- address of left child<br>- address of right child",
+                        "work": "A node of a binary tree is represented by a structure containing a data part and two pointers to other structures of the same type.",
+                        "oper1": "Full Binary Tree",
+                        "ND1": "A full Binary tree is a special type of binary tree in which every parent node/internal node has either two or no children.",
+                        "oper2": "Perfect Binary Tree",
+                        "ND2": "A perfect binary tree is a type of binary tree in which every internal node has exactly two child nodes and all the leaf nodes are at the same level.",
+                        "oper3": "Complete Binary Tree",
+                        "ND3": "A complete binary tree is just like a full binary tree, but with two major differences<br>1. Every level must be completely filled<br>2. All the leaf elements must lean towards the left.<br>3. The last leaf element might not have a right sibling i.e. a complete binary tree doesn't have to be a full binary tree.",
+                        "oper4": "Degenerate or Pathological Tree",
+                        "ND4": "A degenerate or pathological tree is the tree having a single child either left or right.",
+                        "oper5": " Skewed Binary Tree",
+                        "ND5": "A skewed binary tree is a pathological/degenerate tree in which the tree is either dominated by the left nodes or the right nodes. Thus, there are two types of skewed binary tree: left-skewed binary tree and right-skewed binary tree.",
+                        "oper6": "Balanced Binary Tree",
+                        "ND6": "It is a type of binary tree in which the difference between the height of the left and the right subtree for each node is either 0 or 1.",
+                        "application": "1. For easy and quick access to data<br>2. In router algorithms<br>3. To implement heap data structure<br>4. Syntax tree"
+                    }]
+                }]
+            }]
+        },
+        {
+            "content": "Sorting Algorithms",
+            "id": 5,
+            "category": "Sort",
+            "data": [{
+                "content1": "Bubble Sort",
+                "bai1": [{
+                    "title": "In this tutorial, you will learn about tree data structure.",
+                    "noidung": [{
+                        "DN": "A tree is a nonlinear hierarchical data structure that consists of nodes connected by edges.",
+                        "oper1": "Why Tree Data Structure?",
+                        "ND1": "Other data structures such as arrays, linked list, stack, and queue are linear data structures that store data sequentially. In order to perform any operation in a linear data structure, the time complexity increases with the increase in the data size. But, it is not acceptable in today's computational world.<br>Different tree data structures allow quicker and easier access to the data as it is a non-linear data structure.",
+                        "oper2": "Tree Terminologies",
+                        "ND21": "A node is an entity that contains a key or value and pointers to its child nodes.<br>The last nodes of each path are called leaf nodes or external nodes that do not contain a link/pointer to child nodes.<br>The node having at least a child node is called an internal node.",
+                        "ND22": "It is the link between any two nodes.",
+                        "ND23": "It is the topmost node of a tree.",
+                        "ND24": "The height of a node is the number of edges from the node to the deepest leaf (ie. the longest path from the node to a leaf node).",
+                        "ND25": "The depth of a node is the number of edges from the root to the node.",
+                        "ND26": "The height of a Tree is the height of the root node or the depth of the deepest node.",
+                        "ND27": "The degree of a node is the total number of branches of that node.",
+                        "ND28": "A collection of disjoint trees is called a forest.<br>You can create a forest by cutting the root of a tree.",
+                        "oper3": "Types of Tree",
+                        "ND3": "- Binary Tree<br>- Binary Search Tree<br>- B-Tree",
+                        "application": "1. Binary Search Trees(BSTs) are used to quickly check whether an element is present in a set or not.<br>2. Heap is a kind of tree that is used for heap sort.<br>3. A modified version of a tree called Tries is used in modern routers to store routing information.<br>4. Most popular databases use B-Trees and T-Trees, which are variants of the tree structure we learned above to store their data<br>5. Compilers use a syntax tree to validate the syntax of every program you write."
+                    }]
+                }],
+                "content2": "Selection Sort",
+                "bai2": [{
+                    "title": "In this tutorial, you will learn about binary tree and its different types.",
+                    "noidung": [{
+                        "DN": "A binary tree is a tree data structure in which each parent node can have at most two children. Each node of a binary tree consists of three items:<br>- data item<br>- address of left child<br>- address of right child",
+                        "work": "A node of a binary tree is represented by a structure containing a data part and two pointers to other structures of the same type.",
+                        "oper1": "Full Binary Tree",
+                        "ND1": "A full Binary tree is a special type of binary tree in which every parent node/internal node has either two or no children.",
+                        "oper2": "Perfect Binary Tree",
+                        "ND2": "A perfect binary tree is a type of binary tree in which every internal node has exactly two child nodes and all the leaf nodes are at the same level.",
+                        "oper3": "Complete Binary Tree",
+                        "ND3": "A complete binary tree is just like a full binary tree, but with two major differences<br>1. Every level must be completely filled<br>2. All the leaf elements must lean towards the left.<br>3. The last leaf element might not have a right sibling i.e. a complete binary tree doesn't have to be a full binary tree.",
+                        "oper4": "Degenerate or Pathological Tree",
+                        "ND4": "A degenerate or pathological tree is the tree having a single child either left or right.",
+                        "oper5": " Skewed Binary Tree",
+                        "ND5": "A skewed binary tree is a pathological/degenerate tree in which the tree is either dominated by the left nodes or the right nodes. Thus, there are two types of skewed binary tree: left-skewed binary tree and right-skewed binary tree.",
+                        "oper6": "Balanced Binary Tree",
+                        "ND6": "It is a type of binary tree in which the difference between the height of the left and the right subtree for each node is either 0 or 1.",
+                        "application": "1. For easy and quick access to data<br>2. In router algorithms<br>3. To implement heap data structure<br>4. Syntax tree"
+                    }]
+                }],
+                "content3": "Insertion Sort",
+                "bai3": [{
+                    "title": "In this tutorial, you will learn about binary tree and its different types.",
+                    "noidung": [{
+                        "DN": "A binary tree is a tree data structure in which each parent node can have at most two children. Each node of a binary tree consists of three items:<br>- data item<br>- address of left child<br>- address of right child",
+                        "work": "A node of a binary tree is represented by a structure containing a data part and two pointers to other structures of the same type.",
+                        "oper1": "Full Binary Tree",
+                        "ND1": "A full Binary tree is a special type of binary tree in which every parent node/internal node has either two or no children.",
+                        "oper2": "Perfect Binary Tree",
+                        "ND2": "A perfect binary tree is a type of binary tree in which every internal node has exactly two child nodes and all the leaf nodes are at the same level.",
+                        "oper3": "Complete Binary Tree",
+                        "ND3": "A complete binary tree is just like a full binary tree, but with two major differences<br>1. Every level must be completely filled<br>2. All the leaf elements must lean towards the left.<br>3. The last leaf element might not have a right sibling i.e. a complete binary tree doesn't have to be a full binary tree.",
+                        "oper4": "Degenerate or Pathological Tree",
+                        "ND4": "A degenerate or pathological tree is the tree having a single child either left or right.",
+                        "oper5": " Skewed Binary Tree",
+                        "ND5": "A skewed binary tree is a pathological/degenerate tree in which the tree is either dominated by the left nodes or the right nodes. Thus, there are two types of skewed binary tree: left-skewed binary tree and right-skewed binary tree.",
+                        "oper6": "Balanced Binary Tree",
+                        "ND6": "It is a type of binary tree in which the difference between the height of the left and the right subtree for each node is either 0 or 1.",
+                        "application": "1. For easy and quick access to data<br>2. In router algorithms<br>3. To implement heap data structure<br>4. Syntax tree"
+                    }]
+                }]
+            }]
+        },
+        {
+            "content": "Searching Algorithms",
+            "id": 6,
+            "category": "Searching",
+            "data": [{
+                "content1": "Linear Search",
+                "bai1": [{
+                    "title": "In this tutorial, you will learn about tree data structure.",
+                    "noidung": [{
+                        "DN": "A tree is a nonlinear hierarchical data structure that consists of nodes connected by edges.",
+                        "oper1": "Why Tree Data Structure?",
+                        "ND1": "Other data structures such as arrays, linked list, stack, and queue are linear data structures that store data sequentially. In order to perform any operation in a linear data structure, the time complexity increases with the increase in the data size. But, it is not acceptable in today's computational world.<br>Different tree data structures allow quicker and easier access to the data as it is a non-linear data structure.",
+                        "oper2": "Tree Terminologies",
+                        "ND21": "A node is an entity that contains a key or value and pointers to its child nodes.<br>The last nodes of each path are called leaf nodes or external nodes that do not contain a link/pointer to child nodes.<br>The node having at least a child node is called an internal node.",
+                        "ND22": "It is the link between any two nodes.",
+                        "ND23": "It is the topmost node of a tree.",
+                        "ND24": "The height of a node is the number of edges from the node to the deepest leaf (ie. the longest path from the node to a leaf node).",
+                        "ND25": "The depth of a node is the number of edges from the root to the node.",
+                        "ND26": "The height of a Tree is the height of the root node or the depth of the deepest node.",
+                        "ND27": "The degree of a node is the total number of branches of that node.",
+                        "ND28": "A collection of disjoint trees is called a forest.<br>You can create a forest by cutting the root of a tree.",
+                        "oper3": "Types of Tree",
+                        "ND3": "- Binary Tree<br>- Binary Search Tree<br>- B-Tree",
+                        "application": "1. Binary Search Trees(BSTs) are used to quickly check whether an element is present in a set or not.<br>2. Heap is a kind of tree that is used for heap sort.<br>3. A modified version of a tree called Tries is used in modern routers to store routing information.<br>4. Most popular databases use B-Trees and T-Trees, which are variants of the tree structure we learned above to store their data<br>5. Compilers use a syntax tree to validate the syntax of every program you write."
+                    }]
+                }],
+                "content2": "Binary Search",
+                "bai2": [{
+                    "title": "In this tutorial, you will learn about binary tree and its different types.",
+                    "noidung": [{
+                        "DN": "A binary tree is a tree data structure in which each parent node can have at most two children. Each node of a binary tree consists of three items:<br>- data item<br>- address of left child<br>- address of right child",
+                        "work": "A node of a binary tree is represented by a structure containing a data part and two pointers to other structures of the same type.",
+                        "oper1": "Full Binary Tree",
+                        "ND1": "A full Binary tree is a special type of binary tree in which every parent node/internal node has either two or no children.",
+                        "oper2": "Perfect Binary Tree",
+                        "ND2": "A perfect binary tree is a type of binary tree in which every internal node has exactly two child nodes and all the leaf nodes are at the same level.",
+                        "oper3": "Complete Binary Tree",
+                        "ND3": "A complete binary tree is just like a full binary tree, but with two major differences<br>1. Every level must be completely filled<br>2. All the leaf elements must lean towards the left.<br>3. The last leaf element might not have a right sibling i.e. a complete binary tree doesn't have to be a full binary tree.",
+                        "oper4": "Degenerate or Pathological Tree",
+                        "ND4": "A degenerate or pathological tree is the tree having a single child either left or right.",
+                        "oper5": " Skewed Binary Tree",
+                        "ND5": "A skewed binary tree is a pathological/degenerate tree in which the tree is either dominated by the left nodes or the right nodes. Thus, there are two types of skewed binary tree: left-skewed binary tree and right-skewed binary tree.",
+                        "oper6": "Balanced Binary Tree",
+                        "ND6": "It is a type of binary tree in which the difference between the height of the left and the right subtree for each node is either 0 or 1.",
+                        "application": "1. For easy and quick access to data<br>2. In router algorithms<br>3. To implement heap data structure<br>4. Syntax tree"
+                    }]
+                }]
+            }]
+        },
+        {
+            "content": "Greedy Algorithms",
+            "id": 7,
+            "category": "Greedy",
+            "data": [{
+                "content1": "Greedy Algorithm",
+                "bai1": [{
+                    "title": "In this tutorial, you will learn about tree data structure.",
+                    "noidung": [{
+                        "DN": "A tree is a nonlinear hierarchical data structure that consists of nodes connected by edges.",
+                        "oper1": "Why Tree Data Structure?",
+                        "ND1": "Other data structures such as arrays, linked list, stack, and queue are linear data structures that store data sequentially. In order to perform any operation in a linear data structure, the time complexity increases with the increase in the data size. But, it is not acceptable in today's computational world.<br>Different tree data structures allow quicker and easier access to the data as it is a non-linear data structure.",
+                        "oper2": "Tree Terminologies",
+                        "ND21": "A node is an entity that contains a key or value and pointers to its child nodes.<br>The last nodes of each path are called leaf nodes or external nodes that do not contain a link/pointer to child nodes.<br>The node having at least a child node is called an internal node.",
+                        "ND22": "It is the link between any two nodes.",
+                        "ND23": "It is the topmost node of a tree.",
+                        "ND24": "The height of a node is the number of edges from the node to the deepest leaf (ie. the longest path from the node to a leaf node).",
+                        "ND25": "The depth of a node is the number of edges from the root to the node.",
+                        "ND26": "The height of a Tree is the height of the root node or the depth of the deepest node.",
+                        "ND27": "The degree of a node is the total number of branches of that node.",
+                        "ND28": "A collection of disjoint trees is called a forest.<br>You can create a forest by cutting the root of a tree.",
+                        "oper3": "Types of Tree",
+                        "ND3": "- Binary Tree<br>- Binary Search Tree<br>- B-Tree",
+                        "application": "1. Binary Search Trees(BSTs) are used to quickly check whether an element is present in a set or not.<br>2. Heap is a kind of tree that is used for heap sort.<br>3. A modified version of a tree called Tries is used in modern routers to store routing information.<br>4. Most popular databases use B-Trees and T-Trees, which are variants of the tree structure we learned above to store their data<br>5. Compilers use a syntax tree to validate the syntax of every program you write."
+                    }]
+                }],
+                "content2": "Dijkstra's Algorithm",
+                "bai2": [{
+                    "title": "In this tutorial, you will learn about binary tree and its different types.",
+                    "noidung": [{
+                        "DN": "A binary tree is a tree data structure in which each parent node can have at most two children. Each node of a binary tree consists of three items:<br>- data item<br>- address of left child<br>- address of right child",
+                        "work": "A node of a binary tree is represented by a structure containing a data part and two pointers to other structures of the same type.",
+                        "oper1": "Full Binary Tree",
+                        "ND1": "A full Binary tree is a special type of binary tree in which every parent node/internal node has either two or no children.",
+                        "oper2": "Perfect Binary Tree",
+                        "ND2": "A perfect binary tree is a type of binary tree in which every internal node has exactly two child nodes and all the leaf nodes are at the same level.",
+                        "oper3": "Complete Binary Tree",
+                        "ND3": "A complete binary tree is just like a full binary tree, but with two major differences<br>1. Every level must be completely filled<br>2. All the leaf elements must lean towards the left.<br>3. The last leaf element might not have a right sibling i.e. a complete binary tree doesn't have to be a full binary tree.",
+                        "oper4": "Degenerate or Pathological Tree",
+                        "ND4": "A degenerate or pathological tree is the tree having a single child either left or right.",
+                        "oper5": " Skewed Binary Tree",
+                        "ND5": "A skewed binary tree is a pathological/degenerate tree in which the tree is either dominated by the left nodes or the right nodes. Thus, there are two types of skewed binary tree: left-skewed binary tree and right-skewed binary tree.",
+                        "oper6": "Balanced Binary Tree",
+                        "ND6": "It is a type of binary tree in which the difference between the height of the left and the right subtree for each node is either 0 or 1.",
+                        "application": "1. For easy and quick access to data<br>2. In router algorithms<br>3. To implement heap data structure<br>4. Syntax tree"
+                    }]
+                }],
+                "content3": "Kruskal's Algorithm",
+                "bai3": [{
+                    "title": "In this tutorial, you will learn about binary tree and its different types.",
+                    "noidung": [{
+                        "DN": "A binary tree is a tree data structure in which each parent node can have at most two children. Each node of a binary tree consists of three items:<br>- data item<br>- address of left child<br>- address of right child",
+                        "work": "A node of a binary tree is represented by a structure containing a data part and two pointers to other structures of the same type.",
+                        "oper1": "Full Binary Tree",
+                        "ND1": "A full Binary tree is a special type of binary tree in which every parent node/internal node has either two or no children.",
+                        "oper2": "Perfect Binary Tree",
+                        "ND2": "A perfect binary tree is a type of binary tree in which every internal node has exactly two child nodes and all the leaf nodes are at the same level.",
+                        "oper3": "Complete Binary Tree",
+                        "ND3": "A complete binary tree is just like a full binary tree, but with two major differences<br>1. Every level must be completely filled<br>2. All the leaf elements must lean towards the left.<br>3. The last leaf element might not have a right sibling i.e. a complete binary tree doesn't have to be a full binary tree.",
+                        "oper4": "Degenerate or Pathological Tree",
+                        "ND4": "A degenerate or pathological tree is the tree having a single child either left or right.",
+                        "oper5": " Skewed Binary Tree",
+                        "ND5": "A skewed binary tree is a pathological/degenerate tree in which the tree is either dominated by the left nodes or the right nodes. Thus, there are two types of skewed binary tree: left-skewed binary tree and right-skewed binary tree.",
+                        "oper6": "Balanced Binary Tree",
+                        "ND6": "It is a type of binary tree in which the difference between the height of the left and the right subtree for each node is either 0 or 1.",
+                        "application": "1. For easy and quick access to data<br>2. In router algorithms<br>3. To implement heap data structure<br>4. Syntax tree"
+                    }]
+                }]
+            }]
         }
     ]
 }
