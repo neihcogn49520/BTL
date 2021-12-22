@@ -2,14 +2,16 @@ const renderCateOnSideBar = (list, selection) => {
     list.forEach((val, idx) => {
         $(`
         <li>
-            <span class="format-child">${val.itemsChild[0].content}</span>
+            <span class="format-child">${val.content}</span>
             <span class="icon-nav"><i class="fas fa-chevron-right"></i></span>
             <ul class="dropright chickpea">
-            <li class="stack"><a href="">Stack</a> </li>
-            <li class="queue"><a href="">Queue</a> </li>
-            <li class="priority"><a href="">Priority Queue</a></li>
+            <li class="stack"><a href="">${val.itemsChild[0].content}</a> </li>
+            <li class="stack"><a href="">${val.itemsChild[1].content}</a> </li>
+            <li class="stack"><a href="">${val.itemsChild[2].content}</a> </li>
+            <li class="stack"><a href="">${val.itemsChild[3].content}</a> </li>
         </ul>
         </li>
+        
         `).appendTo(selection);
 
 
@@ -18,12 +20,6 @@ const renderCateOnSideBar = (list, selection) => {
             $(`.child-${val.category}`).toggleClass("rotate");
             event.preventDefault()
         });
-
-
-
-
-
-        renderContent(val.category);
 
     });
 };
@@ -147,6 +143,7 @@ const updateList = () => {
         },
     ];
     $("#myTable").empty();
+    $(".list-content").empty();
     let allCheckBox = document.querySelectorAll(".vehicle");
 
     let item = [];
@@ -160,9 +157,10 @@ const updateList = () => {
         for (k = 0; k < courses.length; k++) {
 
             if (item[j] === courses[k].category) {
-
+                console.log(courses[k].category);
                 final.push(courses[k]);
             }
         }
     }
-}
+    renderCateOnSideBar(final, "#myTable");
+};

@@ -719,7 +719,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -1028,6 +1028,55 @@ main .nav-and-slider .left .vertical-nav ul.list-content ul.chickpea li {
   width: 100%;
 }
 
+main .nav-and-slider .left .vertical-nav .child {
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 510px;
+  overflow-y: scroll;
+  position: relative;
+}
+
+main .nav-and-slider .left .vertical-nav .child > li > a {
+  padding-left: 20px;
+  display: inline-block;
+  width: 100%;
+}
+
+main .nav-and-slider .left .vertical-nav .child > li > a:hover {
+  background-color: #fc8a35;
+  color: #fff;
+}
+
+main .nav-and-slider .left .vertical-nav .child > li > ul > a {
+  padding-left: 40px;
+  display: inline-block;
+  width: 100%;
+}
+
+main .nav-and-slider .left .vertical-nav .child > li > ul > a:hover {
+  background-color: #fc8a35;
+  color: #fff;
+}
+
+main .nav-and-slider .left .vertical-nav .child > li > ul > li {
+  padding-left: 60px;
+}
+
+main .nav-and-slider .left .vertical-nav .child > li > ul > li:hover {
+  background-color: #fc8a35;
+  color: #fff;
+}
+
+main .nav-and-slider .left .vertical-nav .child i {
+  position: absolute;
+  font-size: 10px;
+  right: 17px;
+  -webkit-transform: translateY(60%);
+          transform: translateY(60%);
+}
+
 main .nav-and-slider .right {
   margin-top: 20px;
   font-family: Work Sans, Arial, Helvetica, sans-serif;
@@ -1197,23 +1246,23 @@ main .nav-and-slider .right .myform {
   margin: 30px 0;
 }
 
-main .nav-and-slider .right .myform input[type='checkbox'] {
+main .nav-and-slider .right .myform input[type="checkbox"] {
   position: relative;
   width: 40px;
   height: 20px;
   border-radius: 10px;
-  background-color: rgba(0, 255, 55, 0.3);
+  background-color: rgba(245, 186, 140, 0.3);
   -webkit-box-shadow: inset -1px -1px 3px rgba(214, 219, 226, 0.3), inset 1px 1px 3px rgba(34, 40, 49, 0.3);
           box-shadow: inset -1px -1px 3px rgba(214, 219, 226, 0.3), inset 1px 1px 3px rgba(34, 40, 49, 0.3);
   cursor: pointer;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  -webkit-transition: background-color .45;
-  transition: background-color .45;
+  -webkit-transition: background-color 0.45;
+  transition: background-color 0.45;
 }
 
-main .nav-and-slider .right .myform input[type='checkbox']:before {
+main .nav-and-slider .right .myform input[type="checkbox"]:before {
   content: "";
   display: block;
   position: absolute;
@@ -1233,11 +1282,11 @@ main .nav-and-slider .right .myform input[type='checkbox']:before {
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
 
-main .nav-and-slider .right .myform input[type='checkbox']:checked {
-  background-color: #00ff37;
+main .nav-and-slider .right .myform input[type="checkbox"]:checked {
+  background-color: #fc8a35;
 }
 
-main .nav-and-slider .right .myform input[type='checkbox']:checked:before {
+main .nav-and-slider .right .myform input[type="checkbox"]:checked:before {
   -webkit-transform: translate(22px, -50%);
           transform: translate(22px, -50%);
 }
@@ -1285,6 +1334,10 @@ main .services-safira .unspecified-exec {
 
 .btn-active {
   background-color: #fc8a35;
+}
+
+.pd-20 {
+  padding-left: 20px;
 }
 
 .brand {
@@ -1351,7 +1404,7 @@ footer .container .list .color {
 }
 
 footer .container .list .list1 {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 footer .container .list .list1 a {

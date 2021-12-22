@@ -1,13 +1,10 @@
-$.get("http://localhost:3000/posts",
-    (data) => {
-        render(data)
-    }
-);
+$.get("http://localhost:3000/posts", (data) => {
+    render(data);
+});
 
 function render(list) {
-    list.map(val => {
+    list.map((val) => {
         if (val.data[0].val == 1) {
-
             $(".stack").click(function(e) {
                 e.preventDefault();
                 $(".nd-title").addClass("nd-til");
@@ -25,15 +22,17 @@ function render(list) {
                     <p>${val.data[0].bai1[0].noidung[0].DN}</p>
                     <p>${val.data[0].bai1[0].noidung[0].methods}</p>
                 `);
-                $(".nd-operation").addClass("nd-deff");
-                $(".nd-deff").append(`
+                $(".nd-methods").addClass("nd-met");
+                $(".nd-met").append(`
+                    <p>${val.data[0].bai1[0].noidung[0].DN}</p>
+                    <p>${val.data[0].bai1[0].noidung[0].methods}</p>
+                `);
+                $(".nd-application").addClass("nd-app");
+                $(".nd-app").append(`
                     <p>${val.data[0].bai1[0].noidung[0].DN}</p>
                     <p>${val.data[0].bai1[0].noidung[0].methods}</p>
                 `);
             });
-
         }
-
-    })
-
+    });
 }
