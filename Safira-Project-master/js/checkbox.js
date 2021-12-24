@@ -8,10 +8,9 @@ $(document).ready(function() {
             content: "Operation",
             link: "#",
             category: ["Ope"],
-
         },
         {
-            content: "Complexity",
+            content: "Implementations",
             link: "#",
             category: ["Com"],
         },
@@ -19,7 +18,6 @@ $(document).ready(function() {
             content: "Appication",
             link: "#",
             category: ["App"],
-
         },
     ];
 

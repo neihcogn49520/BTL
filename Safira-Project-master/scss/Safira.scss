@@ -387,31 +387,40 @@ main {
                     height: 510px;
                     overflow-y: scroll;
                     position: relative;
+                    .show {
+                        display: block;
+                    }
                     >li {
-                        >a {
-                            padding-left: 20px;
-                            display: inline-block;
-                            width: 100%;
-                            &:hover {
-                                background-color: #fc8a35;
-                                color: #fff;
-                            }
-                        }
-                        >ul {
+                        >span {
                             >a {
-                                padding-left: 40px;
+                                padding-left: 12px;
                                 display: inline-block;
                                 width: 100%;
                                 &:hover {
-                                    background-color: #fc8a35;
-                                    color: #fff;
+                                    color: #fc8a35;
                                 }
                             }
+                        }
+                        >ul {
+                            display: none;
                             >li {
-                                padding-left: 60px;
-                                &:hover {
-                                    background-color: #fc8a35;
-                                    color: #fff;
+                                padding-left: 25px;
+                                display: inline-block;
+                                width: 100%;
+                                >a {
+                                    &:hover {
+                                        color: #fc8a35;
+                                    }
+                                }
+                                >ul {
+                                    display: none;
+                                    >li {
+                                        padding-left: 20px;
+                                        cursor: pointer;
+                                        &:hover {
+                                            color: #fc8a35;
+                                        }
+                                    }
                                 }
                             }
                         }

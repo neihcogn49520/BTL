@@ -1038,35 +1038,45 @@ main .nav-and-slider .left .vertical-nav .child {
   position: relative;
 }
 
-main .nav-and-slider .left .vertical-nav .child > li > a {
-  padding-left: 20px;
+main .nav-and-slider .left .vertical-nav .child .show {
+  display: block;
+}
+
+main .nav-and-slider .left .vertical-nav .child > li > span > a {
+  padding-left: 12px;
   display: inline-block;
   width: 100%;
 }
 
-main .nav-and-slider .left .vertical-nav .child > li > a:hover {
-  background-color: #fc8a35;
-  color: #fff;
+main .nav-and-slider .left .vertical-nav .child > li > span > a:hover {
+  color: #fc8a35;
 }
 
-main .nav-and-slider .left .vertical-nav .child > li > ul > a {
-  padding-left: 40px;
-  display: inline-block;
-  width: 100%;
-}
-
-main .nav-and-slider .left .vertical-nav .child > li > ul > a:hover {
-  background-color: #fc8a35;
-  color: #fff;
+main .nav-and-slider .left .vertical-nav .child > li > ul {
+  display: none;
 }
 
 main .nav-and-slider .left .vertical-nav .child > li > ul > li {
-  padding-left: 60px;
+  padding-left: 25px;
+  display: inline-block;
+  width: 100%;
 }
 
-main .nav-and-slider .left .vertical-nav .child > li > ul > li:hover {
-  background-color: #fc8a35;
-  color: #fff;
+main .nav-and-slider .left .vertical-nav .child > li > ul > li > a:hover {
+  color: #fc8a35;
+}
+
+main .nav-and-slider .left .vertical-nav .child > li > ul > li > ul {
+  display: none;
+}
+
+main .nav-and-slider .left .vertical-nav .child > li > ul > li > ul > li {
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+main .nav-and-slider .left .vertical-nav .child > li > ul > li > ul > li:hover {
+  color: #fc8a35;
 }
 
 main .nav-and-slider .left .vertical-nav .child i {
