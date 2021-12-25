@@ -396,6 +396,7 @@ main {
                                 padding-left: 12px;
                                 display: inline-block;
                                 width: 100%;
+                                margin: 7px 7px 7px 0;
                                 &:hover {
                                     color: #fc8a35;
                                 }
@@ -407,6 +408,7 @@ main {
                                 padding-left: 25px;
                                 display: inline-block;
                                 width: 100%;
+                                margin: 3px 3px 3px 0;
                                 >a {
                                     &:hover {
                                         color: #fc8a35;
@@ -417,6 +419,7 @@ main {
                                     >li {
                                         padding-left: 20px;
                                         cursor: pointer;
+                                        margin: 3px 3px 3px 0;
                                         &:hover {
                                             color: #fc8a35;
                                         }
@@ -508,6 +511,13 @@ main {
         p {
             font-size: 18px;
             margin: 20px;
+        }
+        h3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #ffa967;
+            padding-left: 30px;
+            padding-top: 15px;
         }
         img {
             align-items: center;

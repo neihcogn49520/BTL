@@ -4,20 +4,20 @@ const renderCateOnSideBar = (list, selection) => {
         <li>
             <span class="format-child btn-${val.category}"><a href="">${val.content}<i class="fas fa-chevron-down"></i></a></span>
             <ul class="dropright chickpea content-${val.category}">
-                <li class="dsa1"><a href="">${val.itemsChild[0].content}<i class="fas fa-chevron-down"></i></a> 
+                <li class="dsa1-${val.category}"><a href="">${val.itemsChild[0].content}<i class="fas fa-chevron-down"></i></a> 
                     <ul class="items1-${val.category}">
                         <li class="pd-20">${val.itemsChild[0].items[0].content}</li>
                         <li class="pd-20">${val.itemsChild[0].items[1].content}</li>
                         <li class="pd-20">${val.itemsChild[0].items[2].content}</li>
                     </ul>
                 </li>
-                <li class="dsa2"><a href="">${val.itemsChild[1].content}<i class="fas fa-chevron-down"></i></a>
+                <li class="dsa2-${val.category}"><a href="">${val.itemsChild[1].content}<i class="fas fa-chevron-down"></i></a>
                     <ul class="items2-${val.category}">
                         <li>${val.itemsChild[1].items[0].content}</li>
                         <li>${val.itemsChild[1].items[1].content}</li>
                     </ul>
                 </li>
-                <li class="tree"><a href="">${val.itemsChild[2].content}<i class="fas fa-chevron-down"></i></a>
+                <li class="tree-${val.category}"><a href="">${val.itemsChild[2].content}<i class="fas fa-chevron-down"></i></a>
                     <ul class="items3-${val.category}">
                         <li>${val.itemsChild[2].items[0].content}</li>
                         <li>${val.itemsChild[2].items[1].content}</li>
@@ -25,7 +25,7 @@ const renderCateOnSideBar = (list, selection) => {
                         <li>${val.itemsChild[2].items[3].content}</li>
                     </ul>
                 </li>
-                <li class="graph"><a href="">${val.itemsChild[3].content}<i class="fas fa-chevron-down"></i></a>
+                <li class="graph-${val.category}"><a href="">${val.itemsChild[3].content}<i class="fas fa-chevron-down"></i></a>
                     <ul class="items4-${val.category}">
                         <li>${val.itemsChild[3].items[0].content}</li>
                         <li>${val.itemsChild[3].items[1].content}</li>
@@ -40,19 +40,19 @@ const renderCateOnSideBar = (list, selection) => {
             $(`.child-${val.category}`).toggleClass("rotate");
             event.preventDefault();
         });
-        $(`.dsa1`).click(function(event) {
+        $(`.dsa1-${val.category}`).click(function(event) {
             $(`.items1-${val.category}`).toggleClass("show");
             event.preventDefault();
         });
-        $(`.dsa2`).click(function(event) {
+        $(`.dsa2-${val.category}`).click(function(event) {
             $(`.items2-${val.category}`).toggleClass("show");
             event.preventDefault();
         });
-        $(`.tree`).click(function(event) {
+        $(`.tree-${val.category}`).click(function(event) {
             $(`.items3-${val.category}`).toggleClass("show");
             event.preventDefault();
         });
-        $(`.graph`).click(function(event) {
+        $(`.graph-${val.category}`).click(function(event) {
             $(`.items4-${val.category}`).toggleClass("show");
             event.preventDefault();
         });
@@ -103,9 +103,6 @@ const updateList = () => {
                         },
                         {
                             content: "Binary Search Tree",
-                        },
-                        {
-                            content: "B Tree",
                         },
                     ],
                 },
@@ -167,9 +164,6 @@ const updateList = () => {
                         {
                             content: "Binary Search Tree",
                         },
-                        {
-                            content: "B Tree",
-                        },
                     ],
                 },
                 {
@@ -230,9 +224,6 @@ const updateList = () => {
                         {
                             content: "Binary Search Tree",
                         },
-                        {
-                            content: "B Tree",
-                        },
                     ],
                 },
                 {
@@ -292,9 +283,6 @@ const updateList = () => {
                         },
                         {
                             content: "Binary Search Tree",
-                        },
-                        {
-                            content: "B Tree",
                         },
                     ],
                 },

@@ -1046,6 +1046,7 @@ main .nav-and-slider .left .vertical-nav .child > li > span > a {
   padding-left: 12px;
   display: inline-block;
   width: 100%;
+  margin: 7px 7px 7px 0;
 }
 
 main .nav-and-slider .left .vertical-nav .child > li > span > a:hover {
@@ -1060,6 +1061,7 @@ main .nav-and-slider .left .vertical-nav .child > li > ul > li {
   padding-left: 25px;
   display: inline-block;
   width: 100%;
+  margin: 3px 3px 3px 0;
 }
 
 main .nav-and-slider .left .vertical-nav .child > li > ul > li > a:hover {
@@ -1073,6 +1075,7 @@ main .nav-and-slider .left .vertical-nav .child > li > ul > li > ul {
 main .nav-and-slider .left .vertical-nav .child > li > ul > li > ul > li {
   padding-left: 20px;
   cursor: pointer;
+  margin: 3px 3px 3px 0;
 }
 
 main .nav-and-slider .left .vertical-nav .child > li > ul > li > ul > li:hover {
@@ -1340,6 +1343,14 @@ main .services-safira h2 {
 main .services-safira p {
   font-size: 18px;
   margin: 20px;
+}
+
+main .services-safira h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffa967;
+  padding-left: 30px;
+  padding-top: 15px;
 }
 
 main .services-safira img {
