@@ -372,44 +372,45 @@
             "data": [{
                 "content1": "Linear Search",
                 "bai1": [{
-                    "title": "In this tutorial, you will learn about tree data structure.",
+                    "title": "In this tutorial, you will learn about linear search.",
                     "noidung": [{
-                        "DN": "A tree is a nonlinear hierarchical data structure that consists of nodes connected by edges.",
-                        "oper1": "Why Tree Data Structure?",
-                        "ND1": "Other data structures such as arrays, linked list, stack, and queue are linear data structures that store data sequentially. In order to perform any operation in a linear data structure, the time complexity increases with the increase in the data size. But, it is not acceptable in today's computational world.<br>Different tree data structures allow quicker and easier access to the data as it is a non-linear data structure.",
-                        "oper2": "Tree Terminologies",
-                        "ND21": "A node is an entity that contains a key or value and pointers to its child nodes.<br>The last nodes of each path are called leaf nodes or external nodes that do not contain a link/pointer to child nodes.<br>The node having at least a child node is called an internal node.",
-                        "ND22": "It is the link between any two nodes.",
-                        "ND23": "It is the topmost node of a tree.",
-                        "ND24": "The height of a node is the number of edges from the node to the deepest leaf (ie. the longest path from the node to a leaf node).",
-                        "ND25": "The depth of a node is the number of edges from the root to the node.",
-                        "ND26": "The height of a Tree is the height of the root node or the depth of the deepest node.",
-                        "ND27": "The degree of a node is the total number of branches of that node.",
-                        "ND28": "A collection of disjoint trees is called a forest.<br>You can create a forest by cutting the root of a tree.",
-                        "oper3": "Types of Tree",
-                        "ND3": "- Binary Tree<br>- Binary Search Tree<br>- B-Tree",
-                        "application": "1. Binary Search Trees(BSTs) are used to quickly check whether an element is present in a set or not.<br>2. Heap is a kind of tree that is used for heap sort.<br>3. A modified version of a tree called Tries is used in modern routers to store routing information.<br>4. Most popular databases use B-Trees and T-Trees, which are variants of the tree structure we learned above to store their data<br>5. Compilers use a syntax tree to validate the syntax of every program you write."
+                        "DN": "Linear search is a sequential searching algorithm where we start from one end and check every element of the list until the desired element is found. It is the simplest searching algorithm.",
+                        "oper1": "How Linear Search Works?",
+                        "ND1": "The following steps are followed to search for an element k = 1 in the list below.",
+                        "img1": "https://cdn.programiz.com/sites/tutorial2program/files/linear-search-initial-array.png",
+                        "ND2": "1. Start from the first element, compare k with each element x.",
+                        "img2": "https://cdn.programiz.com/sites/tutorial2program/files/linear-search-comparisons.png",
+                        "ND3": "2. If x == k, return the index.",
+                        "img3": "https://cdn.programiz.com/sites/tutorial2program/files/linear-search-found.png",
+                        "ND4": "3. Else, return not found.",
+                        "complex1": "// Linear Search in C++<br><br>#include <iostream><br>using namespace std;<br><br>int search(int array[], int n, int x) {<br><br>  // Going through array sequencially<br>  for (int i = 0; i < n; i++)<br>    if (array[i] == x)<br>      return i;<br>  return -1;<br>}<br><br>int main() {<br>  int array[] = {2, 4, 0, 1, 9};<br>  int x = 1;<br>  int n = sizeof(array) / sizeof(array[0]);<br><br>  int result = search(array, n, x);<br><br>  (result == -1) ? cout << “Element not found” : cout << “Element found at index: ” << result;<br>}",
+                        "complex2": "Linear Search Complexities",
+                        "complex": "Time Complexity: O(n)<br><br>Space Complexity: O(1)",
+                        "application": "1. For searching operations in smaller arrays (<100 items)."
                     }]
                 }],
                 "content2": "Binary Search",
                 "bai2": [{
-                    "title": "In this tutorial, you will learn about binary tree and its different types.",
+                    "title": "In this tutorial, you will learn how Binary Search sort works.",
                     "noidung": [{
-                        "DN": "A binary tree is a tree data structure in which each parent node can have at most two children. Each node of a binary tree consists of three items:<br>- data item<br>- address of left child<br>- address of right child",
-                        "work": "A node of a binary tree is represented by a structure containing a data part and two pointers to other structures of the same type.",
-                        "oper1": "Full Binary Tree",
-                        "ND1": "A full Binary tree is a special type of binary tree in which every parent node/internal node has either two or no children.",
-                        "oper2": "Perfect Binary Tree",
-                        "ND2": "A perfect binary tree is a type of binary tree in which every internal node has exactly two child nodes and all the leaf nodes are at the same level.",
-                        "oper3": "Complete Binary Tree",
-                        "ND3": "A complete binary tree is just like a full binary tree, but with two major differences<br>1. Every level must be completely filled<br>2. All the leaf elements must lean towards the left.<br>3. The last leaf element might not have a right sibling i.e. a complete binary tree doesn't have to be a full binary tree.",
-                        "oper4": "Degenerate or Pathological Tree",
-                        "ND4": "A degenerate or pathological tree is the tree having a single child either left or right.",
-                        "oper5": " Skewed Binary Tree",
-                        "ND5": "A skewed binary tree is a pathological/degenerate tree in which the tree is either dominated by the left nodes or the right nodes. Thus, there are two types of skewed binary tree: left-skewed binary tree and right-skewed binary tree.",
-                        "oper6": "Balanced Binary Tree",
-                        "ND6": "It is a type of binary tree in which the difference between the height of the left and the right subtree for each node is either 0 or 1.",
-                        "application": "1. For easy and quick access to data<br>2. In router algorithms<br>3. To implement heap data structure<br>4. Syntax tree"
+                        "DN": "Binary Search is a searching algorithm for finding an element's position in a sorted array.<br><br>In this approach, the element is always searched in the middle of a portion of an array.",
+                        "oper1": "Binary Search Working",
+                        "ND1": "Binary Search Algorithm can be implemented in two ways which are discussed below.<br><br>1. Iterative Method<br><br>2. Recursive Method<br><br>The recursive method follows the divide and conquer approach.<br><br>The general steps for both methods are discussed below.<br><br>1. The array in which searching is to be performed is:",
+                        "img1": "https://cdn.programiz.com/sites/tutorial2program/files/binary-search-initial-array.png",
+                        "ND2": "Let x = 4 be the element to be searched.<br><br>2. Set two pointers low and high at the lowest and the highest positions respectively.",
+                        "img2": "https://cdn.programiz.com/sites/tutorial2program/files/binary-search-set-pointers.png",
+                        "ND3": "3. Find the middle element mid of the array ie.<br>arr[(low + high)/2] = 6.",
+                        "img3": "https://cdn.programiz.com/sites/tutorial2program/files/binary-search-mid.png",
+                        "ND4": "4. If x == mid, then return mid.Else, compare the element to be searched with m.<br><br>5. If x > mid, compare x with the middle element of the elements on the right side of mid. This is done by setting low to low = mid + 1.<br><br>6. Else, compare x with the middle element of the elements on the left side of mid. This is done by setting high to high = mid - 1.",
+                        "img4": "https://cdn.programiz.com/sites/tutorial2program/files/binary-search-find-mid.png",
+                        "ND5": "7. Repeat steps 3 to 6 until low meets high.",
+                        "img5": "https://cdn.programiz.com/sites/tutorial2program/files/binary-search-mid-again.png",
+                        "ND6": "x = 4 is found.",
+                        "img6": "https://cdn.programiz.com/sites/tutorial2program/files/binary-search-found.png",
+                        "complex1": "// Binary Search in C++<br><br>#include <iostream><br>using namespace std;<br><br>int binarySearch(int array[], int x, int low, int high) {<br><br>  // Repeat until the pointers low and high meet each other<br>  while (low <= high) {<br>    int mid = low + (high - low) / 2;<br><br>    if (array[mid] == x)<br>      return mid;<br><br>    if (array[mid] < x)<br>      low = mid + 1;<br><br>    else<br>      high = mid - 1;<br>  }<br><br>  return -1;<br>}<br><br>int main(void) {<br>  int array[] = {3, 4, 5, 6, 7, 8, 9};<br>  int x = 4;<br>  int n = sizeof(array) / sizeof(array[0]);<br>  int result = binarySearch(array, x, 0, n - 1);<br>  if (result == -1)<br>    printf(“Not found”);<br>  else<br>    printf(“Element is found at index %d”, result);<br>}",
+                        "complex2": "Binary Search Complexity",
+                        "complex": "1. Time Complexities<br><br>- Best case complexity: O(1)<br><br>- Average case complexity: O(log n)<br><br>- Worst case complexity: O(log n)<br><br>2. Space Complexity<br><br>The space complexity of the binary search is O(1).",
+                        "application": "1. In libraries of Java, .Net, C++ STL<br><br>2. While debugging, the binary search is used to pinpoint the place where the error happens."
                     }]
                 }]
             }]
@@ -421,7 +422,7 @@
             "data": [{
                 "content1": "Greedy Algorithm",
                 "bai1": [{
-                    "title": "In this tutorial, you will learn about tree data structure.",
+                    "title": "In this tutorial, you will learn what a Greedy Algorithm is.",
                     "noidung": [{
                         "DN": "A tree is a nonlinear hierarchical data structure that consists of nodes connected by edges.",
                         "oper1": "Why Tree Data Structure?",
