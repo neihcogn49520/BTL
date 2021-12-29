@@ -22,7 +22,6 @@ const renderCateOnSideBar = (list, selection) => {
                         <li>${val.itemsChild[2].items[0].content}</li>
                         <li>${val.itemsChild[2].items[1].content}</li>
                         <li>${val.itemsChild[2].items[2].content}</li>
-                        <li>${val.itemsChild[2].items[3].content}</li>
                     </ul>
                 </li>
                 <li class="graph-${val.category}"><a href="">${val.itemsChild[3].content}<i class="fas fa-chevron-down"></i></a>
