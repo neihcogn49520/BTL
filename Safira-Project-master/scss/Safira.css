@@ -1314,6 +1314,10 @@ main .nav-and-slider .right .slider {
   font-family: Work Sans, Arial, Helvetica, sans-serif;
 }
 
+main .block {
+  display: block !important;
+}
+
 main .services-safira {
   font-family: Work Sans, Arial, Helvetica, sans-serif;
   margin: 80px 0 100px;
