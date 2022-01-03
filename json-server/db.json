@@ -27,7 +27,7 @@
                 "bai2": [{
                     "title": "In this tutorial, you will learn what a queue is.",
                     "noidung": [{
-                        "DN": "A priority queue is a special type of queue in which each element is associated with a priority value. And, elements are served on the basis of their priority. That is, higher priority elements are served first.<br>However, if elements with the same priority occur, they are served according to their order in the queue.",
+                        "DN": "A queue is a special type of queue in which each element is associated with a priority value. And, elements are served on the basis of their priority. That is, higher priority elements are served first.<br>However, if elements with the same priority occur, they are served according to their order in the queue.",
                         "img1": "https://cdn.programiz.com/sites/tutorial2program/files/queue.png",
                         "DN1": "In the above image, since 1 was kept in the queue before 2, it is the first to be removed from the queue as well. It follows the FIFO rule.<br>In programming terms, putting items in the queue is called enqueue, and removing items from the queue is called dequeue.",
                         "methods": "Queue operations work as follows:<br>- two pointers FRONT and REAR<br>- FRONT track the first element of the queue<br>- REAR track the last element of the queue<br>- initially, set value of FRONT and REAR to -1",
@@ -273,7 +273,7 @@
                         "ND3": "Next, we visit the element at the top of stack i.e. 1 and go to its adjacent nodes. Since 0 has already been visited, we visit 2 instead.",
                         "img3": "https://cdn.programiz.com/sites/tutorial2program/files/graph-dfs-step-2.png",
                         "ND4": "Vertex 2 has an unvisited adjacent vertex in 4, so we add that to the top of the stack and visit it.",
-                        "img4": " https://cdn.programiz.com/sites/tutorial2program/files/graph-dfs-step-3.png",
+                        "img4": "https://cdn.programiz.com/sites/tutorial2program/files/graph-dfs-step-3.png",
                         "img5": "https://cdn.programiz.com/sites/tutorial2program/files/graph-dfs-step-4.png",
                         "ND5": "After we visit the last element 3, it doesn't have any unvisited adjacent nodes, so we have completed the Depth First Traversal of the graph.",
                         "img6": "https://cdn.programiz.com/sites/tutorial2program/files/graph-dfs-step-5.png",

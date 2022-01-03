@@ -555,9 +555,9 @@ $.get("http://localhost:3000/posts", (data) => {
                 $(".nd-application").toggleClass("nd-app");
                 $(".nd-app").append(`
                 <h2>${val.data[0].bai1[0].noidung[0].application1}</h2>
-                <p>${val.data[0].bai3[0].noidung[0].application11}</p>
+                <p>${val.data[0].bai1[0].noidung[0].application11}</p>
                 <h2>${val.data[0].bai1[0].noidung[0].application2}</h2>
-                <p>${val.data[0].bai3[0].noidung[0].application21}</p>
+                <p>${val.data[0].bai1[0].noidung[0].application21}</p>
             `);
             });
         }
@@ -845,7 +845,7 @@ $.get("http://localhost:3000/posts", (data) => {
                 $(".nd-com").append(`
                     <pre class="exec" style="max-height: 600px; width: 660px;">
                       <code class="cpp hljs">
-                      ${val.data[0].bai3[0].noidung[0].complex1}
+                      ${val.data[0].bai1[0].noidung[0].complex1}
                       </code>
                     </pre>
                     <h2>${val.data[0].bai1[0].noidung[0].complex2}</h2>
@@ -963,7 +963,7 @@ $.get("http://localhost:3000/posts", (data) => {
                     <p>${val.data[0].bai1[0].noidung[0].complex11}</p>
                     <pre class="exec" style="max-height: 600px; width: 660px;">
                       <code class="cpp hljs">
-                      ${val.data[0].bai3[0].noidung[0].complex12}
+                      ${val.data[0].bai1[0].noidung[0].complex12}
                       </code>
                     </pre>
                     <h2>${val.data[0].bai1[0].noidung[0].complex2}</h2>
