@@ -19,15 +19,16 @@ const renderCateOnSideBar = (list, selection) => {
                 </li>
                 <li class="tree-${val.category}"><a href="">${val.itemsChild[2].content}<i class="fas fa-chevron-down"></i></a>
                     <ul class="items3-${val.category}">
-                        <li class="pd-20 ${val.category}-b6>${val.itemsChild[2].items[0].content}</li>
-                        <li class="pd-20 ${val.category}-b7>${val.itemsChild[2].items[1].content}</li>
-                        <li class="pd-20 ${val.category}-b8>${val.itemsChild[2].items[2].content}</li>
+                        <li class="pd-20 ${val.category}-b6">${val.itemsChild[2].items[0].content}</li>
+                        <li class="pd-20 ${val.category}-b7">${val.itemsChild[2].items[1].content}</li>
+                        <li class="pd-20 ${val.category}-b8">${val.itemsChild[2].items[2].content}</li>
+                        
                     </ul>
                 </li>
                 <li class="graph-${val.category}"><a href="">${val.itemsChild[3].content}<i class="fas fa-chevron-down"></i></a>
                     <ul class="items4-${val.category}">
-                        <li class="pd-20 ${val.category}-b9>${val.itemsChild[3].items[0].content}</li>
-                        <li class="pd-20 ${val.category}-b10>${val.itemsChild[3].items[1].content}</li>
+                        <li class="pd-20 ${val.category}-b9">${val.itemsChild[3].items[0].content}</li>
+                        <li class="pd-20 ${val.category}-b10">${val.itemsChild[3].items[1].content}</li>
                     </ul>
                 </li>
             </ul>
@@ -436,7 +437,8 @@ const rendercontent = (id) => {
                 <p>A standard DFS implementation puts each vertex of the graph into one of two categories:<br><br>1. Visited<br><br>2. Not Visited<br><br>The purpose of the algorithm is to mark each vertex as visited while avoiding cycles.<br><br>The DFS algorithm works as follows:<br><br>1. Start by putting any one of the graph's vertices on top of a stack.<br><br>2. Take the top item of the stack and add it to the visited list.<br><br>3. Create a list of that vertex's adjacent nodes. Add the ones which aren't in the visited list to the top of the stack.<br><br>4. Keep repeating steps 2 and 3 until the stack is empty.</p>
             `);
         });
-    } else if (id == "Ope") {
+    }
+    if (id == "Ope") {
         $(`.${id}-b1`).click(function(e) {
             e.preventDefault();
             $(".services-safira").empty();
@@ -651,9 +653,11 @@ const rendercontent = (id) => {
                 <img src="https://cdn.programiz.com/sites/tutorial2program/files/graph-dfs-step-5.png" alt="Search Operation 2" style="width: 50%">
             `);
         });
-    } else if (id == "Com") {
+    }
+    if (id == "Com") {
         $(`.${id}-b1`).click(function(e) {
             e.preventDefault();
+            console.log("hien");
             $(".services-safira").empty();
             $(".nd").toggleClass("nd-b1");
             $(".nd-b1").append(`
@@ -787,7 +791,8 @@ const rendercontent = (id) => {
                 <p>The time complexity of the DFS algorithm is represented in the form of O(V + E), where V is the number of nodes and E is the number of edges.<br><br>The space complexity of the algorithm is O(V).</p>
             `);
         });
-    } else {
+    }
+    if (id == "App") {
         $(`.${id}-b1`).click(function(e) {
             e.preventDefault();
             $(".services-safira").empty();
