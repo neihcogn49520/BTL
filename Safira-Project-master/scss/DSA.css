@@ -1029,7 +1029,7 @@ main .nav-and-slider .left .vertical-nav ul.list-content ul.chickpea li {
 }
 
 main .nav-and-slider .left .vertical-nav .child {
-  display: block;
+  display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1088,6 +1088,10 @@ main .nav-and-slider .left .vertical-nav .child i {
   right: 17px;
   -webkit-transform: translateY(60%);
           transform: translateY(60%);
+}
+
+main .nav-and-slider .left .vertical-nav .block {
+  display: block !important;
 }
 
 main .nav-and-slider .right {
@@ -1312,10 +1316,6 @@ main .nav-and-slider .right .slider {
   position: relative;
   margin-top: 20px;
   font-family: Work Sans, Arial, Helvetica, sans-serif;
-}
-
-main .block {
-  display: block !important;
 }
 
 main .services-safira {

@@ -382,7 +382,7 @@ main {
                     }
                 }
                 .child {
-                    display: block;
+                    display: none;
                     justify-content: center;
                     height: 510px;
                     overflow-y: scroll;
@@ -434,6 +434,9 @@ main {
                         right: 17px;
                         transform: translateY(60%);
                     }
+                }
+                .block {
+                    display: block !important;
                 }
             }
         }
@@ -489,9 +492,6 @@ main {
                 font-family: Work Sans, Arial, Helvetica, sans-serif;
             }
         }
-    }
-    .block {
-        display: block !important;
     }
     .services-safira {
         font-family: Work Sans, Arial, Helvetica, sans-serif;

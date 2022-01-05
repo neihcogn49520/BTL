@@ -310,6 +310,7 @@ const updateList = () => {
     for (i = 0; i < allCheckBox.length; i++) {
         if (allCheckBox[i].checked) {
             item.push(allCheckBox[i].defaultValue);
+            $(".child").addClass("block");
         }
     }
     let final = [];
